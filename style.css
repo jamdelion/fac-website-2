@@ -1,0 +1,10 @@
+/* Stops images stretching beyond the size of the screen */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* #jo-img {
+  width: 80%;
+  height: 100%;
+} */
