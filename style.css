@@ -4,7 +4,6 @@ img {
   display: block;
 }
 
-/* #jo-img {
-  width: 80%;
-  height: 100%;
-} */
+#jo-img {
+  border-radius: 50%;
+}
