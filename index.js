@@ -2,15 +2,19 @@
 document.addEventListener("DOMContentLoaded", function(){
 
 
-function toggleDarkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-}
+    // ------ TOGGLE COLOUR MODE --------------------------
+    function toggleDarkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
 
-let toggleSwitch = document.getElementById("switch");
+    let toggleSwitch = document.getElementById("switch");
 
-toggleSwitch.addEventListener("click", toggleDarkMode);
+    toggleSwitch.addEventListener("click", toggleDarkMode);
 
 
+    // ------ MIDDLE NAV BUTTONS --------------------------
+
+    const middleNavButtons = document.querySelectorAll(".nav-button"); // array
 
 });
