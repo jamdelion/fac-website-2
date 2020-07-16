@@ -1,7 +1,42 @@
+/* -------- Toggles-------- */
+
 .dark-mode {
   background-color: black;
   color: white;
 }
+
+/* -------- Structural Elements -------- */
+
+#top-nav {
+  display:flex;
+  justify-content: flex-end;
+}
+
+/* -------- Interactive Elements -------- */
+
+button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+
+
+/* -------- Text Elements -------- */
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/* ----- Image Elements -------- */
 
 /* Stops images stretching beyond the size of the screen */
 img {
@@ -11,17 +46,7 @@ img {
 
 #jo-img {
   border-radius: 50%;
-}
-
-#top-nav {
-  display:flex;
-  justify-content: flex-end;
-}
-
-button {
-  outline: none;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
