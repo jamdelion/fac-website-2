@@ -5,6 +5,10 @@
   color: white;
 }
 
+.hidden {
+  display: none;
+}
+
 /* -------- Structural Elements -------- */
 
 #top-nav {

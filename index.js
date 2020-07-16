@@ -17,4 +17,22 @@ document.addEventListener("DOMContentLoaded", function(){
 
     const middleNavButtons = document.querySelectorAll(".nav-button"); // array
 
+    function hideElement(target) {
+        target.classList.toggle("hidden");
+    }
+
+    function hideLinkedText(event) {
+        var textId = event.target.getAttribute("data-linked-text");
+        hideElement(document.getElementById(textId));
+    }
+
+    middleNavButtons.forEach(function(button) {
+        button.addEventListener("click", hideLinkedText)
+    });
+
+
+
 });
+
+
+
