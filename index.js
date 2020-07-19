@@ -3,14 +3,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
     // ------ TOGGLE COLOUR MODE --------------------------
+    let toggleSwitch = document.getElementById("switch");
+
     function toggleDarkMode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
     }
 
-    let toggleSwitch = document.getElementById("switch");
+    function toggleSunMoon() {
+      var sunMoon = document.getElementById('sun-moon');
+      sunMoon.classList.toggle("fa-moon");
+      toggleSwitch.classList.toggle("white");
+      sunMoon.classList.toggle("fa-sun");
+    }
 
-    toggleSwitch.addEventListener("click", toggleDarkMode);
+    toggleSwitch.addEventListener("click", () => {
+      toggleDarkMode();
+      toggleSunMoon();
+    });
 
 
     // ------ MIDDLE NAV BUTTONS --------------------------
@@ -33,6 +43,3 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 });
-
-
-

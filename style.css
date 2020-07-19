@@ -9,6 +9,10 @@
   display: none;
 }
 
+.white {
+  color: white;
+}
+
 /* -------- Structural Elements -------- */
 
 #top-nav {
