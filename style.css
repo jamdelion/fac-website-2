@@ -81,3 +81,17 @@ img {
   margin-right: auto;
   width: 40%;
 }
+
+/* Image Carousel */
+
+.slide-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.images img {
+  width: 100%;
+}
+
+
