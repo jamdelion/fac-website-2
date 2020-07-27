@@ -84,9 +84,9 @@ img {
 
 /* Image Carousel */
 
-.slide-container {
+#slide-container {
   max-width: 100%;
-  position: absolute;
+  position: relative;
   margin: auto;
 }
 
@@ -97,5 +97,11 @@ img {
 #img-nav-btns {
   position: absolute;
   max-width: 0%;
-  right: 10%;
+  right: 5%;
+  top: 50%;
+}
+
+.img-nav {
+  padding: 1em 0em;
+  color: white;
 }
