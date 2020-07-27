@@ -10,13 +10,15 @@ document.addEventListener("DOMContentLoaded", function(){
 
   var slideIndex = 1;
 
-  function showImages(n) {
+  function showImages(targetSlideIndex) {
+    console.log("n", targetSlideIndex);
+    slideIndex = targetSlideIndex;
     var images = document.getElementsByClassName("images");
     var navNumbers = document.getElementsByClassName("img-nav");
-    if (n > images.length) {
+    if (slideIndex > images.length) {
       slideIndex = 1;
     }
-    if (n < 1) {
+    if (slideIndex < 1) {
       slideIndex = images.length;
     }
     for (i = 0; i < images.length; i++) {
@@ -27,8 +29,13 @@ document.addEventListener("DOMContentLoaded", function(){
     navNumbers[slideIndex-1].classList.add("active")
   }
 
-  function nextSlide(n) {
-    showImages(slideIndex += n);
+  // function clickToImage(elem) {
+  //   var navNumbers = document.getElementsByClassName("img-nav");
+  //   for (i = 0; i < navNumbers.length; i++) {
+  //       var buttonNum = navNumbers[i].innerHTML;
+  //       showImages(buttonNum);
+  //   }
+  // }
 
   function clickToImage(elem) {
     var buttonNum = parseInt(elem.innerHTML);
@@ -41,16 +48,20 @@ document.addEventListener("DOMContentLoaded", function(){
       clickToImage(navNumber);
     });
   });
+
+
+  function changeSlide(increment) {
+    showImages(slideIndex + increment);
   }
 
 // Enable key press control
   document.onkeydown = function(event) {
     switch (event.keyCode) {
       case 37:
-        nextSlide(-1);
+        changeSlide(-1);
         break;
       case 39:
-        nextSlide(1);
+        changeSlide(1);
         break;
     }
   };
