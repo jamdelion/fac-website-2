@@ -86,7 +86,7 @@ img {
 
 .slide-container {
   max-width: 100%;
-  position: relative;
+  position: absolute;
   margin: auto;
 }
 
@@ -94,4 +94,8 @@ img {
   width: 100%;
 }
 
-
+#img-nav-btns {
+  position: absolute;
+  max-width: 0%;
+  right: 10%;
+}
