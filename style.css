@@ -13,6 +13,10 @@
   color: white;
 }
 
+.active {
+  color: blue !important;
+}
+
 /* -------- Structural Elements -------- */
 
 #top-nav {
@@ -104,4 +108,6 @@ img {
 .img-nav {
   padding: 1em 0em;
   color: white;
+  cursor: pointer;
+  user-select: none;
 }

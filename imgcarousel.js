@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   function showImages(n) {
     var images = document.getElementsByClassName("images");
+    var navNumbers = document.getElementsByClassName("img-nav");
     if (n > images.length) {
       slideIndex = 1;
     }
@@ -19,13 +20,27 @@ document.addEventListener("DOMContentLoaded", function(){
       slideIndex = images.length;
     }
     for (i = 0; i < images.length; i++) {
-        images[i].classList.add("hidden")
+        images[i].classList.add("hidden");
+        navNumbers[i].classList.remove("active");
     }
-    images[slideIndex-1].classList.remove("hidden")
+    images[slideIndex-1].classList.remove("hidden");
+    navNumbers[slideIndex-1].classList.add("active")
   }
 
   function nextSlide(n) {
     showImages(slideIndex += n);
+
+  function clickToImage(elem) {
+    var buttonNum = parseInt(elem.innerHTML);
+    showImages(buttonNum);
+  }
+
+  const navNumbers = document.querySelectorAll(".img-nav");
+  navNumbers.forEach(function(navNumber) {
+    navNumber.addEventListener("click", () => {
+      clickToImage(navNumber);
+    });
+  });
   }
 
 // Enable key press control
