@@ -28,12 +28,31 @@ document.addEventListener("DOMContentLoaded", function(){
     const middleNavButtons = document.querySelectorAll(".nav-button"); // array
 
     function hideElement(target) {
-        target.classList.toggle("hidden");
+      target.classList.toggle("hidden");
     }
 
+    function hideAllElements(target) {
+      if (!(target.classList.contains("hidden"))) {
+        hideElement(target);
+      };
+    };
+
     function hideLinkedText(event) {
-        var textId = event.target.getAttribute("data-linked-text");
-        hideElement(document.getElementById(textId));
+      // use custom attributes to link content's id to button
+      var SelectedContentId = event.target.getAttribute("data-linked-text");
+
+      const contentTabs = document.querySelectorAll(".tab");
+      var selectedContent = document.getElementById(SelectedContentId);
+
+      // if element is hidden, hide all others and show this one
+      if (selectedContent.classList.contains("hidden")) {
+        contentTabs.forEach(hideAllElements);
+        hideElement(selectedContent);
+      }
+      // if element is showing, hide it (and all others)
+      else {
+        contentTabs.forEach(hideAllElements);
+      }
     }
 
     middleNavButtons.forEach(function(button) {
