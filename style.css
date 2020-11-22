@@ -105,6 +105,13 @@ img {
   max-width: 100%;
   position: relative;
   margin: auto;
+  padding: 1em 0.5em;
+}
+
+#img-wrapper {
+  height: 11em;
+  overflow: hidden;
+  width: 100%;
 }
 
 .images img {
