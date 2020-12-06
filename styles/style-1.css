@@ -84,6 +84,14 @@ button {
   font-size: 1.5em;
 }
 
+#palette-switch {
+  transition: scale 0.7s ease
+}
+
+#palette-switch:hover {
+  transform: scale(1.1);
+}
+
 #dark-mode-switch {
   transition: transform 0.7s ease
 }
