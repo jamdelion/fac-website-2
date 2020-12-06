@@ -126,6 +126,11 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  font: bold 30px Padauk;
+  padding: 3%;
+}
+
 p {
   margin-left: auto;
   margin-right: auto;
