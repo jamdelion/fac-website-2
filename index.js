@@ -1,19 +1,32 @@
   // Wait until the DOM is fully loaded before running the JS
 document.addEventListener("DOMContentLoaded", function(){
 
+// ------ CHANGE STYLESHEET --------------------------
 
   function randomStyleOnLoad() {
     let stylesheet = document.createElement('link');
     stylesheet.rel  = 'stylesheet';
-    stylesheet.href = 'styles/style-' + (Math.floor(Math.random()*2)+1) + '.css';
+    stylesheet.id = "page-style";
+    stylesheet.href = 'styles/style-' + (Math.floor(Math.random()*1)+1) + '.css';
     document.getElementsByTagName('head')[0].appendChild(stylesheet);
     };
 
-  randomStyleOnLoad();
+  // randomStyleOnLoad();
+
+  let colourPalette = document.getElementById("colour-palette");
+
+  function changeStylesheet(style) {
+    document.getElementById("page-style").setAttribute("href", style);
+  }
+
+  colourPalette.addEventListener("click", () => {
+    let randomStyle = 'styles/style-' + (Math.floor(Math.random()*2)+1) + '.css';
+    changeStylesheet(randomStyle);
+  });
 
 
-    // ------ TOGGLE COLOUR MODE --------------------------
-    let toggleSwitch = document.getElementById("switch");
+    // ------ TOGGLE DARK MODE --------------------------
+    let toggleSwitch = document.getElementById("dark-mode-switch");
 
     function toggleDarkMode() {
         var element = document.body;
