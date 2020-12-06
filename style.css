@@ -180,3 +180,17 @@ img {
   user-select: none;
   transition: 1s ease;
 }
+
+/* --------------------STYLING FOR DIFFERENT SCREEN SIZES--------------------------- */
+/* Properties for larger screens */
+@media (min-width: 800px) {
+
+/* Why FAC section - desktop size */
+
+  .fac-reason {
+    width: 30%;
+    padding-bottom: 2%;
+  }
+
+}
+/* end of media query: min-width: 800px */
