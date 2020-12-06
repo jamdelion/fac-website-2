@@ -58,6 +58,22 @@
   margin: auto;
 }
 
+/* -------- Why FAC section -------- */
+
+.why-fac-content {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fac-reason {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-bottom: 5%;
+}
+
 /* -------- Interactive Elements -------- */
 
 button {
