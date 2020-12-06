@@ -2,6 +2,16 @@
 document.addEventListener("DOMContentLoaded", function(){
 
 
+  function randomStyleOnLoad() {
+    let stylesheet = document.createElement('link');
+    stylesheet.rel  = 'stylesheet';
+    stylesheet.href = 'styles/style-' + (Math.floor(Math.random()*2)+1) + '.css';
+    document.getElementsByTagName('head')[0].appendChild(stylesheet);
+    };
+
+  randomStyleOnLoad();
+
+
     // ------ TOGGLE COLOUR MODE --------------------------
     let toggleSwitch = document.getElementById("switch");
 

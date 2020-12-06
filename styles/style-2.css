@@ -1,0 +1,202 @@
+/* -------- Toggles-------- */
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.white {
+  color: white;
+}
+
+.active {
+  color: blue !important;
+}
+
+/* -------- Structural Elements -------- */
+
+#top-nav {
+  display:flex;
+  justify-content: flex-end;
+}
+
+#middle-nav {
+  border: thin solid gray;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+}
+
+.mn-button {
+  padding: 0.5rem;
+  border-right: solid gray thin;
+  display: flex;
+  justify-content: center;
+  width: 25%
+}
+
+#link-container {
+  border-right: none;
+}
+
+.tab {
+  border: 0.3em solid lightblue;
+  border-radius: 25px;
+  width: 90%;
+  margin: 1.5em auto;
+}
+
+#top {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* -------- Why FAC section -------- */
+
+.why-fac-content {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.fac-reason {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-bottom: 5%;
+}
+
+/* -------- Interactive Elements -------- */
+
+button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+#switch {
+  transition: transform 0.7s ease
+}
+
+#switch:hover {
+  transform: rotate(180deg);
+}
+
+.nav-button {
+  padding: 1% 1% 1% 1%;
+  /* border: solid gray thin;
+  border-radius: 25px; */
+}
+
+#links {
+  text-align: center;
+  padding: 3% 3% 3% 1%;
+/*  bottom: 0;
+  position: fixed;
+  background-color: white; */
+}
+
+#links a {
+  color: black;
+  transition: color 0.5s ease;
+}
+
+#links a:hover {
+  color: gray;
+}
+
+#codewarsicon {
+  height: 100%;
+  width: 2.5em;
+}
+
+/* -------- Text Elements -------- */
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  font: bold 30px Padauk;
+  padding: 3%;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+/* ----- Image Elements -------- */
+
+/* Stops images stretching beyond the size of the screen */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#jo-img {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* Image Carousel */
+
+#slide-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 1em 0.5em;
+}
+
+#img-wrapper {
+  height: 11em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.images img {
+  width: 100%;
+}
+
+#img-nav-btns {
+  position: absolute;
+  max-width: 0%;
+  right: 5%;
+  top: 50%;
+}
+
+.img-nav {
+  padding: 1em 0em;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: 1s ease;
+}
+
+/* --------------------STYLING FOR DIFFERENT SCREEN SIZES--------------------------- */
+/* Properties for larger screens */
+@media (min-width: 800px) {
+
+/* Why FAC section - desktop size */
+
+  .fac-reason {
+    width: 30%;
+    padding-bottom: 2%;
+  }
+
+}
+/* end of media query: min-width: 800px */
