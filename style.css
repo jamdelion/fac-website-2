@@ -80,6 +80,15 @@ button {
   background-color: white; */
 }
 
+#links a {
+  color: black;
+  transition: color 0.5s ease;
+}
+
+#links a:hover {
+  color: gray;
+}
+
 #codewarsicon {
   height: 100%;
   width: 2.5em;
