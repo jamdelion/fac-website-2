@@ -56,6 +56,14 @@ button {
   font-size: 1.5em;
 }
 
+#switch {
+  transition: transform 0.7s ease
+}
+
+#switch:hover {
+  transform: rotate(180deg);
+}
+
 .nav-button {
   padding: 1% 1% 1% 1%;
   border-style: solid;
