@@ -26,12 +26,24 @@
 
 #middle-nav {
   border: thin solid gray;
-  border-radius: 25px;
+  border-radius: 6px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
   display: flex;
   justify-content: space-around;
+}
+
+.mn-button {
+  padding: 0.5rem;
+  border-right: solid gray thin;
+  display: flex;
+  justify-content: center;
+  width: 25%
+}
+
+#link-container {
+  border-right: none;
 }
 
 .tab {
@@ -66,10 +78,8 @@ button {
 
 .nav-button {
   padding: 1% 1% 1% 1%;
-  border-style: solid;
-  border-color: gray;
-  border-width: thin;
-  border-radius: 25px;
+  /* border: solid gray thin;
+  border-radius: 25px; */
 }
 
 #links {
