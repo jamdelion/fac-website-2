@@ -41,6 +41,11 @@
   margin: 1.5em auto;
 }
 
+#top {
+  max-width: 1000px;
+  margin: auto;
+}
+
 /* -------- Interactive Elements -------- */
 
 button {
