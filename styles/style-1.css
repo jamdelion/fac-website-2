@@ -39,7 +39,8 @@
   border-right: solid gray thin;
   display: flex;
   justify-content: center;
-  width: 25%
+  width: 25%;
+  cursor: pointer;
 }
 
 #link-container {
@@ -143,6 +144,10 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+}
+
+#intro {
+  text-align: center;
 }
 
 /* ----- Image Elements -------- */
