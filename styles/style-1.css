@@ -5,7 +5,7 @@
   color: white;
 }
 
-.hidden {
+.hidden-img {
   display: none;
 }
 
@@ -32,6 +32,12 @@
   max-width: 1000px;
   margin: auto;
 }
+
+/* -----------Sections ----------- */
+
+/* #about-me {
+  display: block !important;
+} */
 
 /* -------- Why FAC section -------- */
 
@@ -163,6 +169,12 @@ img {
 /* Properties for larger screens */
 @media (min-width: 800px) {
 
+/* -------- Toggles-------- */
+
+  .hidden {
+  display: none;
+}
+
 /* Why FAC section - desktop size */
 
   .fac-reason {
@@ -203,7 +215,7 @@ img {
   }
 
   /* -------- Interactive Elements -------- */
-  
+
   #palette-switch {
     transition: scale 0.7s ease
   }

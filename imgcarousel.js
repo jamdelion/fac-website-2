@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function(){
       slideIndex = images.length;
     }
     for (i = 0; i < images.length; i++) {
-        images[i].classList.add("hidden");
+        images[i].classList.add("hidden-img");
         navNumbers[i].classList.remove("active");
     }
-    images[slideIndex-1].classList.remove("hidden");
+    images[slideIndex-1].classList.remove("hidden-img");
     navNumbers[slideIndex-1].classList.add("active")
   }
 
