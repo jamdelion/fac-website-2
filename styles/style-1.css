@@ -59,22 +59,6 @@ button {
   font-size: 1.5em;
 }
 
-#palette-switch {
-  transition: scale 0.7s ease
-}
-
-#palette-switch:hover {
-  transform: scale(1.1);
-}
-
-#dark-mode-switch {
-  transition: transform 0.7s ease
-}
-
-#dark-mode-switch:hover {
-  transform: rotate(180deg);
-}
-
 .nav-button {
   padding: 1% 1% 1% 1%;
   /* border: solid gray thin;
@@ -216,6 +200,24 @@ img {
     border-radius: 25px;
     width: 90%;
     margin: 1.5em auto;
+  }
+
+  /* -------- Interactive Elements -------- */
+  
+  #palette-switch {
+    transition: scale 0.7s ease
+  }
+  
+  #palette-switch:hover {
+    transform: scale(1.1);
+  }
+  
+  #dark-mode-switch {
+    transition: transform 0.7s ease
+  }
+  
+  #dark-mode-switch:hover {
+    transform: rotate(180deg);
   }
 
 }
