@@ -93,6 +93,38 @@ button {
   width: 2.5em;
 }
 
+#scale-container {
+  width:80%;
+  margin: auto;
+}
+
+.lines {
+  display: flex;
+  width: 80%
+}
+
+.line{
+  width: 50%;
+  height: 47px;
+  border-bottom: 2px solid #d4cfcf;
+  }
+
+#marks {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-mark {
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  height: 20px;
+  position: relative;
+  top: -10px;
+  border: thin solid gray;
+}
+
 /* -------- Text Elements -------- */
 
 h1 {
