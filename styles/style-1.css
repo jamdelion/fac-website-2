@@ -5,7 +5,7 @@
   color: white;
 }
 
-.hidden-img {
+.hidden-img, .invisible {
   display: none;
 }
 
@@ -15,6 +15,16 @@
 
 .active {
   color: blue !important;
+}
+
+.thick-line {
+  border-width: 4px !important;
+}
+
+.thick-circle {
+  border-width: 2px !important;
+  /* border-color: cyan !important; */
+
 }
 
 /* -------- Structural Elements -------- */
@@ -122,7 +132,7 @@ button {
   height: 20px;
   position: relative;
   top: -10px;
-  border: thin solid gray;
+  border: 1px solid gray;
 }
 
 /* -------- Text Elements -------- */
@@ -204,8 +214,8 @@ img {
 /* -------- Toggles-------- */
 
   .hidden {
-  display: none;
-}
+    display: none;
+  }
 
 /* Why FAC section - desktop size */
 

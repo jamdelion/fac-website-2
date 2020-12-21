@@ -103,13 +103,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function unthickenAll(target) {
       console.log("unthickenAll");
-      if (!(target.classList.contains("thick-circle"))) {
+      if ((target.classList.contains("thick-circle"))) {
         thickenCircle(target);
       };
     };
 
-    function invisibliseLinkedText(event) {
-      console.log("invisibliseLinkedText");
+    function changeDetailLevel(event) {
+      console.log("changeDetailLevel");
+
+      // restore all circles to not-thick
+      circleMarks.forEach(unthickenAll);
+      thickenCircle(event.target);
+
       // use custom attributes to link content's id to button
       var selectedContentId = event.target.getAttribute("data-linked-text");
       console.log(selectedContentId);
@@ -122,14 +127,10 @@ document.addEventListener("DOMContentLoaded", function(){
         amDetails.forEach(invisibiliseAllElements);
         invisibiliseElement(selectedContent);
       }
-      // // if element is showing, hide it (and all others)
-      // else {
-      //   amDetails.forEach(invisibiliseAllElements);
-      // }
     }
 
     circleMarks.forEach(function(button) {
-        button.addEventListener("click", invisibliseLinkedText)
+        button.addEventListener("click", changeDetailLevel)
     }); 
 
 });
