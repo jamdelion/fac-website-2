@@ -67,12 +67,23 @@
           <div class="line" id="line2"></div>
         </div>
         <div id="marks">
-          <div class="circle-mark"></div>
-          <div class="circle-mark"></div>
-          <div class="circle-mark"></div>
+          <div class="circle-mark" id="mark1" data-linked-text="sparse-detail"></div>
+          <div class="circle-mark thick-circle" id="mark2" data-linked-text="more-detail"></div>
+          <div class="circle-mark" id="mark3" data-linked-text="most-detail"></div>
         </div>
+      </div>
 
-    <p>About me Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+        <input type="range" min="1" max="3" step="1" value="2" id="x" class="slider">
+        <div id="options">
+          <div class="mark mark1">Sparse</div>
+          <div class="mark mark2">Default</div>
+          <div class="mark mark3">Very detailed</div>
+        </div>
+    </div>
+
+    <p id="sparse-detail" class="invisible am-detail">About me SPARSE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+    <p id="more-detail" class="am-detail">About me DEFAULT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+    <p id="most-detail" class="invisible am-detail">About me MOST Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
   </section>
 
 <!-- Why FAC -->

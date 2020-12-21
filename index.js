@@ -82,6 +82,54 @@ document.addEventListener("DOMContentLoaded", function(){
         button.addEventListener("click", hideLinkedText)
     });
 
+    // ------ Detail slider --------------------------
 
+    let circleMarks = document.querySelectorAll(".circle-mark"); // array
+
+    function thickenCircle(target) {
+      console.log("thickenCircle");
+      target.classList.toggle("thick-circle");
+    }
+
+    function invisibiliseElement(target) {
+      target.classList.toggle("invisible");
+    }
+
+    function invisibiliseAllElements(target) {
+      if (!(target.classList.contains("invisible"))) {
+        invisibiliseElement(target);
+      };
+    };
+
+    function unthickenAll(target) {
+      console.log("unthickenAll");
+      if (!(target.classList.contains("thick-circle"))) {
+        thickenCircle(target);
+      };
+    };
+
+    function invisibliseLinkedText(event) {
+      console.log("invisibliseLinkedText");
+      // use custom attributes to link content's id to button
+      var selectedContentId = event.target.getAttribute("data-linked-text");
+      console.log(selectedContentId);
+
+      const amDetails = document.querySelectorAll(".am-detail");
+      var selectedContent = document.getElementById(selectedContentId);
+
+      // if element is invisible, hide all others and show this one
+      if (selectedContent.classList.contains("invisible")) {
+        amDetails.forEach(invisibiliseAllElements);
+        invisibiliseElement(selectedContent);
+      }
+      // // if element is showing, hide it (and all others)
+      // else {
+      //   amDetails.forEach(invisibiliseAllElements);
+      // }
+    }
+
+    circleMarks.forEach(function(button) {
+        button.addEventListener("click", invisibliseLinkedText)
+    }); 
 
 });
