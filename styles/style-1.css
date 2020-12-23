@@ -98,7 +98,15 @@ button {
   width: 2.5em;
 }
 
-#scale-container {
+/* Detail scale */
+
+#options {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#detail-scale {
   width:80%;
   margin: auto;
 }
