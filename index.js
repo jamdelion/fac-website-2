@@ -120,10 +120,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
       // thicken circle and corresponding lines
       thicken(event.target);
-      if (event.target.id == "mark2") {
+      if (event.target.id == "circle2") {
         thicken(line1);
       }
-      else if (event.target.id == "mark3") {
+      else if (event.target.id == "circle3") {
         thicken(line1);
         thicken(line2);
       }

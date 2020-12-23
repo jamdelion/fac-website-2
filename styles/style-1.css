@@ -114,7 +114,7 @@ button {
   border-bottom: 2px solid #d4cfcf;
   }
 
-#marks {
+#circles {
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -130,7 +130,7 @@ button {
   border: 1px solid gray;
 }
 
-#mark3 {
+#circle3 {
   left: 2px;
 }
 
