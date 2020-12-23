@@ -17,14 +17,9 @@
   color: blue !important;
 }
 
-.thick-line {
-  border-width: 4px !important;
-}
-
-.thick-circle {
-  border-width: 2px !important;
-  /* border-color: cyan !important; */
-
+.thick {
+  border-width: 3px !important;
+  border-color: #575656 !important;
 }
 
 /* -------- Structural Elements -------- */
@@ -133,6 +128,10 @@ button {
   position: relative;
   top: -10px;
   border: 1px solid gray;
+}
+
+#mark3 {
+  left: 2px;
 }
 
 /* -------- Text Elements -------- */

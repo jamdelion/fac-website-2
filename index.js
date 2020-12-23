@@ -85,10 +85,13 @@ document.addEventListener("DOMContentLoaded", function(){
     // ------ Detail slider --------------------------
 
     let circleMarks = document.querySelectorAll(".circle-mark"); // array
+    let lines = document.querySelectorAll(".line"); // array
+    let line1 = document.getElementById("line1");
+    let line2 = document.getElementById("line2");
 
-    function thickenCircle(target) {
-      console.log("thickenCircle");
-      target.classList.toggle("thick-circle");
+    function thicken(target) {
+      console.log("thickenLine");
+      target.classList.toggle("thick");
     }
 
     function invisibiliseElement(target) {
@@ -103,17 +106,27 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function unthickenAll(target) {
       console.log("unthickenAll");
-      if ((target.classList.contains("thick-circle"))) {
-        thickenCircle(target);
+      if ((target.classList.contains("thick"))) {
+        thicken(target);
       };
     };
 
     function changeDetailLevel(event) {
       console.log("changeDetailLevel");
 
-      // restore all circles to not-thick
+      // restore everything to not-thick
       circleMarks.forEach(unthickenAll);
-      thickenCircle(event.target);
+      lines.forEach(unthickenAll);
+
+      // thicken circle and corresponding lines
+      thicken(event.target);
+      if (event.target.id == "mark2") {
+        thicken(line1);
+      }
+      else if (event.target.id == "mark3") {
+        thicken(line1);
+        thicken(line2);
+      }
 
       // use custom attributes to link content's id to button
       var selectedContentId = event.target.getAttribute("data-linked-text");
