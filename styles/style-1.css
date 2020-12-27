@@ -309,19 +309,40 @@ img {
   object-fit: cover;
 }
 
-#img-nav-btns {
-  position: absolute;
-  max-width: 0%;
-  right: 12%;
-  top: 31%;
+/* #mob-imgNavs {
+  display: flex;
+} */
+
+#prevNext {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+  position: relative;
+  top: -70%;
 }
 
-.img-nav {
-  padding: 1em 0em;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-  transition: 1s ease;
+.dot {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  margin: 20px 2px 20px 2px;
+  border: thick solid black;
+  padding: 2px;
+  transition: background-color 1s ease;
+}
+
+#playPause, #dots {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+  position: relative;
+  z-index: 999999999;
+}
+
+#playIcon, #pauseIcon {
+  margin: 5px 5px 0px 5px;
+  transition: color 1s ease;
 }
 
 /* --------------------STYLING FOR DIFFERENT SCREEN SIZES--------------------------- */
@@ -392,6 +413,34 @@ img {
   }
 
   #hamburger-menu {
+    display: none;
+  }
+
+  /* ---- Image Carousel ----- */
+
+  #img-nav-btns {
+    position: absolute;
+    max-width: 0%;
+    right: 12%;
+    top: 31%;
+  }
+  
+  .img-nav {
+    color: white;
+    user-select: none;
+    transition: 1s ease;
+    cursor: pointer;
+    user-select: none;
+    transition: 1s ease;
+    padding: 0.5em;
+    border: 3px solid;
+    border-radius: 50%;
+    margin: 0.5em;
+    width: 1px;
+    height: 1px;
+  }
+
+  #prevNext, .mob-imgNavs, #dots {
     display: none;
   }
 
