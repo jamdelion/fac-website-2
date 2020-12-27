@@ -390,7 +390,7 @@ img {
     transform: rotate(180deg);
   }
 
-  #menu, #hamburger-links {
+  #hamburger-menu {
     display: none;
   }
 
