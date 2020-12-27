@@ -26,7 +26,7 @@
 
 #top-nav {
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 #middle-nav {
@@ -98,7 +98,116 @@ button {
   width: 2.5em;
 }
 
-/* Detail scale */
+/* ---- Hamburger links ----- */
+
+#menu {
+  position: fixed;
+  left: -100px;
+  top: -100px;
+  z-index: 105;
+  width: 180px;
+  cursor: pointer;
+}
+
+#menu-hamburger {
+  position: absolute;
+  top: 126px;
+  right: 37px;
+  transform-origin: center;
+  transition: .5s ease-in-out;
+}
+
+.hamburger {
+  position: absolute;
+  top: 135px;
+  right: 50px;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  display: block;
+  transform-origin: center;
+  transition: .5s ease-in-out;
+}
+
+.hamburger::after, .hamburger::before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  bottom: -10px;
+}
+
+input:checked ~ #menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input:checked ~ #menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+input:checked ~ #menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+label {
+    display: block;
+    background: #b0aeae;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+input:checked + label {
+    width: 98%;
+    height: 40%;
+    top: -35px;
+    left: -8px;
+    border-radius: 13%;
+    border: thick solid #b0aeae;
+    background: white;
+    box-shadow: 3px 3px 8px gray;
+}
+
+input {
+   visibility: hidden;
+   position: absolute;
+}
+
+#hamburger-links { 
+  opacity: 0;
+  z-index: 200;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  transition: .25s 0s ease-in-out;
+}
+
+input:checked ~ #hamburger-links { 
+  opacity: 1; 
+}
+
+/* --------Detail scale-------- */
 
 #options {
   width: 90%;
@@ -279,6 +388,10 @@ img {
   
   #dark-mode-switch:hover {
     transform: rotate(180deg);
+  }
+
+  #menu, #hamburger-links {
+    display: none;
   }
 
 }
