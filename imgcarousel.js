@@ -25,9 +25,11 @@ document.addEventListener("DOMContentLoaded", function(){
     for (i = 0; i < images.length; i++) {
         images[i].classList.add("hidden-img");
         navNumbers[i].classList.remove("active");
+        dots[i].classList.remove("active");
     }
     images[slideIndex-1].classList.remove("hidden-img");
     navNumbers[slideIndex-1].classList.add("active")
+    dots[i].classList.add("active");
   }
 
   // function clickToImage(elem) {
@@ -66,6 +68,15 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   };
 
+  prevButton.addEventListener("click", () => {
+    console.log("change slide -1");
+    changeSlide(-1);
+  });
+
+  nextButton.addEventListener("click", () => {
+    console.log("change slide +1");
+    changeSlide(1);
+  });
 
 
 });
