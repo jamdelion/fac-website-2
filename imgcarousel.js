@@ -1,20 +1,21 @@
 // Wait until the DOM is fully loaded before running the JS
 document.addEventListener("DOMContentLoaded", function(){
 
-  // IMAGE CAROUSEL
+  var images = document.getElementsByClassName("images");
+  const navNumbers = document.querySelectorAll(".img-nav");
+  var dots = document.getElementsByClassName("dot");
+  var nextButton = document.getElementById("next-icon");
+  var prevButton = document.getElementById("prev-icon");
+  var slideIndex = 1;
 
   function playSlides() {
     nextSlide(1);
     setTimeout(playSlides, 3000);
   }
 
-  var slideIndex = 1;
-
   function showImages(targetSlideIndex) {
     console.log("n", targetSlideIndex);
     slideIndex = targetSlideIndex;
-    var images = document.getElementsByClassName("images");
-    var navNumbers = document.getElementsByClassName("img-nav");
     if (slideIndex > images.length) {
       slideIndex = 1;
     }
@@ -42,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function(){
     showImages(buttonNum);
   }
 
-  const navNumbers = document.querySelectorAll(".img-nav");
   navNumbers.forEach(function(navNumber) {
     navNumber.addEventListener("click", () => {
       clickToImage(navNumber);
