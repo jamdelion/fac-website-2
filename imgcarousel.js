@@ -7,9 +7,12 @@ document.addEventListener("DOMContentLoaded", function(){
   var nextButton = document.getElementById("next-icon");
   var prevButton = document.getElementById("prev-icon");
   var slideIndex = 1;
+  var pauseIcon = document.getElementById('pauseIcon');
+  var playIcon = document.getElementById('playIcon');
+  var playPause = document.getElementById("playPause");
 
   function playSlides() {
-    nextSlide(1);
+    changeSlide(1);
     setTimeout(playSlides, 3000);
   }
 
@@ -54,6 +57,21 @@ document.addEventListener("DOMContentLoaded", function(){
 
   function changeSlide(increment) {
     showImages(slideIndex + increment);
+  }
+
+
+  // on click play slides
+  playPause.onclick = function() {
+    // does playbutton class contains "play" (true or false)
+    console.log("playPause clicked");
+    var playing = !playPause.classList.toggle("play");
+    // change icon from play to pause icon if slideshow playing
+    playIcon.classList.toggle("hidden-img");
+    pauseIcon.classList.toggle("hidden-img");
+    // if "play" not in classlist, playslides (start function)
+    if (playing) {
+      playSlides();
+    }
   }
 
 // Enable key press control
