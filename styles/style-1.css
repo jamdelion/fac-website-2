@@ -332,6 +332,12 @@ img {
   transition: color 1s ease;
 }
 
+#img-nav-btns {
+  display: none;
+}
+
+
+
 /* --------------------STYLING FOR DIFFERENT SCREEN SIZES--------------------------- */
 /* Properties for larger screens */
 @media (min-width: 800px) {
@@ -406,6 +412,7 @@ img {
   /* ---- Image Carousel ----- */
 
   #img-nav-btns {
+    display: block;
     position: absolute;
     max-width: 0%;
     right: 8%;
