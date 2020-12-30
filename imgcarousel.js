@@ -12,8 +12,10 @@ document.addEventListener("DOMContentLoaded", function(){
   var playPause = document.getElementById("playPause");
 
   function playSlides() {
-    changeSlide(1);
-    setTimeout(playSlides, 3000);
+    if (!playPause.classList.contains("play")) {
+      changeSlide(1);
+      setTimeout(playSlides, 1000);
+    }
   }
 
   function showImages(targetSlideIndex) {
