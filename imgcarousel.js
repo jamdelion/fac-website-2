@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
   var images = document.getElementsByClassName("images");
   const navNumbers = document.querySelectorAll(".img-nav");
-  var dots = document.getElementsByClassName("dot");
   var nextButton = document.getElementById("next-icon");
   var prevButton = document.getElementById("prev-icon");
   var slideIndex = 1;
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
   function playSlides() {
     if (!playPause.classList.contains("play")) {
       changeSlide(1);
-      setTimeout(playSlides, 1000);
+      setTimeout(playSlides, 2000);
     }
   }
 
@@ -30,20 +29,10 @@ document.addEventListener("DOMContentLoaded", function(){
     for (i = 0; i < images.length; i++) {
         images[i].classList.add("hidden-img");
         navNumbers[i].classList.remove("active");
-        dots[i].classList.remove("active");
     }
     images[slideIndex-1].classList.remove("hidden-img");
     navNumbers[slideIndex-1].classList.add("active")
-    dots[i].classList.add("active");
   }
-
-  // function clickToImage(elem) {
-  //   var navNumbers = document.getElementsByClassName("img-nav");
-  //   for (i = 0; i < navNumbers.length; i++) {
-  //       var buttonNum = navNumbers[i].innerHTML;
-  //       showImages(buttonNum);
-  //   }
-  // }
 
   function clickToImage(elem) {
     var buttonNum = parseInt(elem.innerHTML);
@@ -97,6 +86,5 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log("change slide +1");
     changeSlide(1);
   });
-
 
 });
