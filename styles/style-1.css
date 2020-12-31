@@ -211,9 +211,10 @@ input:checked ~ #hamburger-links {
 /* --------Detail scale-------- */
 
 #options {
-  width: 90%;
+  width: 87%;
   display: flex;
   justify-content: space-between;
+  margin: auto;
 }
 
 #detail-scale {
@@ -223,7 +224,8 @@ input:checked ~ #hamburger-links {
 
 .lines {
   display: flex;
-  width: 80%
+  width: 80%;
+  margin: auto;
 }
 
 .line{
@@ -236,6 +238,7 @@ input:checked ~ #hamburger-links {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  margin: auto;
 }
 
 .circle-mark {
