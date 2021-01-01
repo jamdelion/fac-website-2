@@ -273,7 +273,8 @@ h1 {
 }
 
 h3 {
-  font: bold 30px Padauk;
+  font-family: 'Montserrat';
+  font-size: 50px;
   padding: 3%;
   text-align: center;
 }
