@@ -53,6 +53,10 @@ body {
   padding: 1rem 0 3rem 0;
 }
 
+footer {
+  background-color: lightgray;
+}
+
 /* -------- Why FAC section -------- */
 
 #why-fac {
@@ -392,7 +396,7 @@ main {
 
 footer {
   flex-shrink: 0;
-  background-color: lightgray;
+  background-color: transparent;
 }
 
 header {
