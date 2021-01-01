@@ -264,6 +264,7 @@ h1 {
 h3 {
   font: bold 30px Padauk;
   padding: 3%;
+  text-align: center;
 }
 
 p {
@@ -350,6 +351,12 @@ img {
   .hidden {
     display: none;
   }
+
+/* -------- Text elements-------- */
+
+h3 {
+  text-align: left;
+}
 
 /* Why FAC section - desktop size */
 
