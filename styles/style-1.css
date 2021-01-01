@@ -24,9 +24,20 @@
 
 /* -------- Structural Elements -------- */
 
+html, body {
+  height: 100%
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 #top-nav {
   display:flex;
   justify-content: flex-end;
+  padding-top: 0.5rem;
 }
 
 #middle-nav {
@@ -38,13 +49,16 @@
   margin: auto;
 }
 
-/* -----------Sections ----------- */
-
-/* #about-me {
-  display: block !important;
-} */
+#about-me {
+  padding: 1rem 0 3rem 0;
+}
 
 /* -------- Why FAC section -------- */
+
+#why-fac {
+  background-color: #e8ecef;
+  padding: 0.5rem;
+}
 
 .why-fac-content {
   width: 90%;
@@ -78,10 +92,7 @@ button {
 
 #links {
   text-align: center;
-  padding: 6% 3% 3% 1%;
-/*  bottom: 0;
-  position: fixed;
-  background-color: white; */
+  padding: 1rem;
 }
 
 #links a {
@@ -294,6 +305,10 @@ img {
 
 /* Image Carousel */
 
+#img-carousel {
+  padding-bottom: 1rem;
+}
+
 #slide-container {
   position: relative;
   margin: auto;
@@ -358,7 +373,34 @@ h3 {
   text-align: left;
 }
 
+/* -------- Structural elements-------- */
+
+#page-container {
+  flex: 1 0 auto;
+}
+
+#why-fac, #about-me, #img-carousel {
+  padding: 0;
+}
+
+main {
+  padding-bottom: 5rem;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: lightgray;
+}
+
+header {
+  padding: 1rem 0 3rem 0;
+}
+
 /* Why FAC section - desktop size */
+
+#why-fac {
+  background-color: transparent;
+}
 
   .fac-reason {
     width: 30%;

@@ -15,207 +15,208 @@
 </head>
 
 <body>
-  <!-- Top Bar -->
-  <nav id="top-nav">
-    <div id="hamburger-menu">
-      <input id="hidden-checkbox" type="checkbox"></input>
-      <label for="hidden-checkbox"></label>  
-      <button id="menu">
-        <span class="hamburger" id="menu-hamburger"></span>
+  <div id="page-container">
+    <!-- Top Bar -->
+    <nav id="top-nav">
+      <div id="hamburger-menu">
+        <input id="hidden-checkbox" type="checkbox"></input>
+        <label for="hidden-checkbox"></label>  
+        <button id="menu">
+          <span class="hamburger" id="menu-hamburger"></span>
+        </button>
+        <nav id="hamburger-links">
+          <ul>
+            <li><a class="inner-hamburger" href="#about-me">About Me</a></li>
+            <li><a class="inner-hamburger" href="#why-fac">Why Founders & Coders?</a></li>
+            <li><a class="inner-hamburger" href="#img-carousel">Images</a></li>
+            <li><a class="inner-hamburger" href="#links">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="colour-mode-buttons">
+        <button id="palette-switch">
+          <i class="fas fa-palette" id="colour-palette"></i>
       </button>
-      <nav id="hamburger-links">
-        <ul>
-          <li><a class="inner-hamburger" href="#about-me">About Me</a></li>
-          <li><a class="inner-hamburger" href="#why-fac">Why Founders & Coders?</a></li>
-          <li><a class="inner-hamburger" href="#img-carousel">Images</a></li>
-          <li><a class="inner-hamburger" href="#links">Links</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div id="colour-mode-buttons">
-      <button id="palette-switch">
-        <i class="fas fa-palette" id="colour-palette"></i>
-    </button>
-      <button id="dark-mode-switch">
-          <i class="fas fa-moon" id="sun-moon"></i>
-      </button>
-    </div>
-  </nav>
-
-  <header>
-    <!-- Title and Jo Photo -->
-    <section id="top-section">
-      <h1>Jo Humphrey</h1>
-      <img src="images/jo.jpg" id="jo-img" alt="Photo of Jo wearing a striped top and geeky glasses.">
-    </section>
-
-    <!-- Intro -->
-    <section id="intro">
-      <p id="intro">Hi, I'm Jo! I'm 27, and I live in Cambridge. :) </p>
-    </section>
-  </header>
-
-  <!-- Middle Nav -->
-  <nav id="middle-nav">
-    <div class="mn-button">
-      <div class="nav-button" id="mn-about" data-linked-text="about-me">About Me</div>
-    </div>
-    <div class="mn-button">
-      <div class="nav-button" id="mn-why" data-linked-text="why-fac">Why FAC</div>
-    </div>
-    <div class="mn-button">
-      <div class="nav-button" id="mn-img" data-linked-text="img-carousel">Images</div>
-    </div>
-    <div class="mn-button" id="link-container">
-      <div class="nav-button" id="mn-links" data-linked-text="links">Links</div>
-    </div>
-  </nav>
-  
-  <main>
-    <!-- About Me -->
-    <section id="about-me" class="hidden tab">
-      <h3>About Me</h3>
-
-      <div id="detail-scale">
-        <div class="lines">
-          <div class="line thick" id="line1"></div>
-          <div class="line" id="line2"></div>
-        </div>
-        <div id="circles">
-          <div class="circle-mark" id="circle1" data-linked-text="sparse-detail"></div>
-          <div class="circle-mark thick" id="circle2" data-linked-text="more-detail"></div>
-          <div class="circle-mark" id="circle3" data-linked-text="most-detail"></div>
-        </div>
-        <div id="options">
-          <div id="mark1">Sparse</div>
-          <div id="mark2">Default</div>
-          <div id="mark3">Very detailed</div>
-        </div>
+        <button id="dark-mode-switch">
+            <i class="fas fa-moon" id="sun-moon"></i>
+        </button>
       </div>
+    </nav>
 
-      <div id="sparse-detail" class="invisible am-detail">
-        <ul>
-          <li>Vegan</li>
-          <li>Musician</li>
-          <li>Cat Lover</li>
-          <li>Skater</li>
-          <li>Linguist</li>
-          <li>Coder</li>
-        </ul>
+    <header>
+      <!-- Title and Jo Photo -->
+      <section id="top-section">
+        <h1>Jo Humphrey</h1>
+        <img src="images/jo.jpg" id="jo-img" alt="Photo of Jo wearing a striped top and geeky glasses.">
+      </section>
+
+      <!-- Intro -->
+      <section id="intro">
+        <p id="intro">Hi, I'm Jo! I'm 27, and I live in Cambridge. :) </p>
+      </section>
+    </header>
+
+    <!-- Middle Nav -->
+    <nav id="middle-nav">
+      <div class="mn-button">
+        <div class="nav-button" id="mn-about" data-linked-text="about-me">About Me</div>
       </div>
-      <p id="more-detail" class="am-detail">About me DEFAULT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-      <p id="most-detail" class="invisible am-detail">About me MOST Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-    </section>
+      <div class="mn-button">
+        <div class="nav-button" id="mn-why" data-linked-text="why-fac">Why FAC</div>
+      </div>
+      <div class="mn-button">
+        <div class="nav-button" id="mn-img" data-linked-text="img-carousel">Images</div>
+      </div>
+      <div class="mn-button" id="link-container">
+        <div class="nav-button" id="mn-links" data-linked-text="links">Links</div>
+      </div>
+    </nav>
+    
+    <main>
+      <!-- About Me -->
+      <section id="about-me" class="hidden tab">
+        <h3>About Me</h3>
 
-  <!-- Why FAC -->
-    <section id="why-fac" class="hidden tab">
-      <h3>Why FAC?</h3>
-      <div id="why-content">
-        <div class="why-fac-content">
-          <div class="fac-reason">
-            <i class="fas fa-code fa-2x" id="code-icon"></i>
-            <h4>Values</h4>
-            <div class="reason-text">
-              <ul>
-                <li>The values of F&C strongly align with my own.</li>
-                <li>I aim to define my career by <strong>making a difference to the world</strong>.
-                <li>I want to encourage <strong>more womxn</strong> to learn to code. </li>
-                <li><strong>Cooperatives are my favorite</strong> form of organisation! (See reason three for gushing about coops)</li>
-              </ul>
-            </div>
+        <div id="detail-scale">
+          <div class="lines">
+            <div class="line thick" id="line1"></div>
+            <div class="line" id="line2"></div>
           </div>
-          <div class="fac-reason">
-            <i class="fas fa-code fa-2x" id="code-icon"></i>
-            <h4>Community</h4>
-            <div class="reason-text">
-              <ul>
-                <li>I want a learning environment where I am supported by <strong>like-minded people</strong> who share my enthusiasm, commitment and values.</li>
-                <li><strong>Nobody gets left behind!</strong></li>
-                <li>I want to join the <strong>alumni community</strong> that champions the power of <strong>tech for good</strong> throughout the globe.</li>
-              </ul>
-            </div>
+          <div id="circles">
+            <div class="circle-mark" id="circle1" data-linked-text="sparse-detail"></div>
+            <div class="circle-mark thick" id="circle2" data-linked-text="more-detail"></div>
+            <div class="circle-mark" id="circle3" data-linked-text="most-detail"></div>
           </div>
-          <div class="fac-reason">
-            <i class="fas fa-code fa-2x" id="code-icon"></i>
-            <h4>Cooperative</h4>
-            <div class="reason-text">
-              <ul>
-                <li>I &#10084; coops! I tried to set up a workers' coop vegan café, and my current day job is as a worker-member of a vegetarian workers' coop shop.</li>
-                <li>I'm 100% behind the principles of <strong>collective decision-making, community concern</strong> and <strong>inter-cooperative support</strong>.</li>
-                <li>I believe in the <strong>resilience</strong> and <strong>creativity</strong> of coops, and hope that my future lies in a tech coop.</li>
-              </ul>
-            </div>
+          <div id="options">
+            <div id="mark1">Sparse</div>
+            <div id="mark2">Default</div>
+            <div id="mark3">Very detailed</div>
           </div>
-          <div class="fac-reason">
-            <i class="fas fa-code fa-2x" id="code-icon"></i>
-            <h4>Diversity</h4>
-            <div class="reason-text">
-              <ul>
-                <li>I want to learn <strong>new ways of thinking</strong> from an environment where diversity of experience is represented.</li>
-                <li>I want to learn in a <strong>safe space</strong>, where womxn and members of other minority groups are seen, heard and listened to.</li>
-              </ul>
+        </div>
+
+        <div id="sparse-detail" class="invisible am-detail">
+          <ul>
+            <li>Vegan</li>
+            <li>Musician</li>
+            <li>Cat Lover</li>
+            <li>Skater</li>
+            <li>Linguist</li>
+            <li>Coder</li>
+          </ul>
+        </div>
+        <p id="more-detail" class="am-detail">About me DEFAULT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+        <p id="most-detail" class="invisible am-detail">About me MOST Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+      </section>
+
+    <!-- Why FAC -->
+      <section id="why-fac" class="hidden tab">
+        <h3>Why FAC?</h3>
+        <div id="why-content">
+          <div class="why-fac-content">
+            <div class="fac-reason">
+              <i class="fas fa-code fa-2x" id="code-icon"></i>
+              <h4>Values</h4>
+              <div class="reason-text">
+                <ul>
+                  <li>The values of F&C strongly align with my own.</li>
+                  <li>I aim to define my career by <strong>making a difference to the world</strong>.
+                  <li>I want to encourage <strong>more womxn</strong> to learn to code. </li>
+                  <li><strong>Cooperatives are my favorite</strong> form of organisation! (See reason three for gushing about coops)</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="fac-reason">
-            <i class="fas fa-code fa-2x" id="code-icon"></i>
-            <h4>Career</h4>
-            <div class="reason-text">
-              <ul>
-                <li>I'm serious about making a career in tech - a sector which is <strong>dynamic, flexible and full of possibility!</strong></li>
-                <li>FAC has an enviable list of cool-looking employer links. &#x1F60F; </li>
-                <li>The full-time, focused course will ensure that this becomes <strong>a journey of a lifetime!</strong></li>
-              </ul>
+            <div class="fac-reason">
+              <i class="fas fa-code fa-2x" id="code-icon"></i>
+              <h4>Community</h4>
+              <div class="reason-text">
+                <ul>
+                  <li>I want a learning environment where I am supported by <strong>like-minded people</strong> who share my enthusiasm, commitment and values.</li>
+                  <li><strong>Nobody gets left behind!</strong></li>
+                  <li>I want to join the <strong>alumni community</strong> that champions the power of <strong>tech for good</strong> throughout the globe.</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="fac-reason">
-            <i class="fas fa-code fa-2x" id="code-icon"></i>
-            <h4>Pay It Forward</h4>
-            <div class="reason-text">
-              <ul>
-                <li>The coding community has given so much to me already, through free mentoring schemes such as CodeBar and DjangoGirls, and the FAC meetups and resources.</li>
-                <li>I have also benefited from other empowerment projects, such as the Prince's Trust.</li>
-                <li>It's only right to aim to pass what I have learnt to others, and benefit everyone as a collective. <strong>#teamwork</strong></li>
-              </ul>
+            <div class="fac-reason">
+              <i class="fas fa-code fa-2x" id="code-icon"></i>
+              <h4>Cooperative</h4>
+              <div class="reason-text">
+                <ul>
+                  <li>I &#10084; coops! I tried to set up a workers' coop vegan café, and my current day job is as a worker-member of a vegetarian workers' coop shop.</li>
+                  <li>I'm 100% behind the principles of <strong>collective decision-making, community concern</strong> and <strong>inter-cooperative support</strong>.</li>
+                  <li>I believe in the <strong>resilience</strong> and <strong>creativity</strong> of coops, and hope that my future lies in a tech coop.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fac-reason">
+              <i class="fas fa-code fa-2x" id="code-icon"></i>
+              <h4>Diversity</h4>
+              <div class="reason-text">
+                <ul>
+                  <li>I want to learn <strong>new ways of thinking</strong> from an environment where diversity of experience is represented.</li>
+                  <li>I want to learn in a <strong>safe space</strong>, where womxn and members of other minority groups are seen, heard and listened to.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fac-reason">
+              <i class="fas fa-code fa-2x" id="code-icon"></i>
+              <h4>Career</h4>
+              <div class="reason-text">
+                <ul>
+                  <li>I'm serious about making a career in tech - a sector which is <strong>dynamic, flexible and full of possibility!</strong></li>
+                  <li>FAC has an enviable list of cool-looking employer links. &#x1F60F; </li>
+                  <li>The full-time, focused course will ensure that this becomes <strong>a journey of a lifetime!</strong></li>
+                </ul>
+              </div>
+            </div>
+            <div class="fac-reason">
+              <i class="fas fa-code fa-2x" id="code-icon"></i>
+              <h4>Pay It Forward</h4>
+              <div class="reason-text">
+                <ul>
+                  <li>The coding community has given so much to me already, through free mentoring schemes such as CodeBar and DjangoGirls, and the FAC meetups and resources.</li>
+                  <li>I have also benefited from other empowerment projects, such as the Prince's Trust.</li>
+                  <li>It's only right to aim to pass what I have learnt to others, and benefit everyone as a collective. <strong>#teamwork</strong></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Img Carousel -->
-    <section id="img-carousel" class="hidden tab">
-      <h3>Images</h3>
-      <div id="slide-container">
-        <div id="img-wrapper">
-          <img src="images/cat1.JPG" alt="cat pic" class="images" id="photo1">
-          <img src="images/cat2.jpg" alt="cat pic" class="images hidden-img" id="photo2">
-          <img src="images/cat3.jpg" alt="cat pic" class="images hidden-img" id="photo3">
-        </div>
-        <div id="img-nav-btns">
-          <div class="img-nav active">01</div>
-          <div class="img-nav">02</div>
-          <div class="img-nav">03</div>
-        </div>
-        <div id="prevNext">
-          <!-- Previous button -->
-          <div class="prev">
-            <i class="fas fa-chevron-circle-left fa-4x white" id="prev-icon"></i>
+      <!-- Img Carousel -->
+      <section id="img-carousel" class="hidden tab">
+        <h3>Images</h3>
+        <div id="slide-container">
+          <div id="img-wrapper">
+            <img src="images/cat1.JPG" alt="cat pic" class="images" id="photo1">
+            <img src="images/cat2.jpg" alt="cat pic" class="images hidden-img" id="photo2">
+            <img src="images/cat3.jpg" alt="cat pic" class="images hidden-img" id="photo3">
           </div>
-        <!-- Next button -->
-          <div class="next">
-            <i class="fas fa-chevron-circle-right fa-4x white" id="next-icon"></i>
+          <div id="img-nav-btns">
+            <div class="img-nav active">01</div>
+            <div class="img-nav">02</div>
+            <div class="img-nav">03</div>
+          </div>
+          <div id="prevNext">
+            <!-- Previous button -->
+            <div class="prev">
+              <i class="fas fa-chevron-circle-left fa-4x white" id="prev-icon"></i>
+            </div>
+          <!-- Next button -->
+            <div class="next">
+              <i class="fas fa-chevron-circle-right fa-4x white" id="next-icon"></i>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Play/Pause button -->
-      <div class="pause play" id="playPause">
-        <div id="playIcon" class=""> <i class="fas fa-play fa-2x black" id="playIcon"></i></div>
-        <div id="pauseIcon" class="hidden-img"><i class="fas fa-pause fa-2x black"></i></div>
-      </div>
-    </section>
-  </main>
-
+        <!-- Play/Pause button -->
+        <div class="pause play" id="playPause">
+          <div id="playIcon" class=""> <i class="fas fa-play fa-2x black" id="playIcon"></i></div>
+          <div id="pauseIcon" class="hidden-img"><i class="fas fa-pause fa-2x black"></i></div>
+        </div>
+      </section>
+    </main>
+  </div>
   <footer>
     <!-- Links -->
     <nav id="links">
@@ -224,6 +225,5 @@
       <a href="https://www.codewars.com/users/joko208"><span class="iconify" data-icon="simple-icons:codewars" data-inline="false" id="codewarsicon"></span></a>
     </nav>
   </footer>
-
 </body>
 </html>
