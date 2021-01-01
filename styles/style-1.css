@@ -86,8 +86,10 @@ button {
 
 .nav-button {
   padding: 1% 1% 1% 1%;
-  /* border: solid gray thin;
-  border-radius: 25px; */
+}
+
+.mn-button:hover {
+  background-color: pink;
 }
 
 #links {
@@ -411,13 +413,16 @@ header {
   /* Middle Nav */
 
   #middle-nav {
-    border: thin solid gray;
     border-radius: 6px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
     display: flex;
     justify-content: space-around;
+    background-color: gray;
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
   }
   
   .mn-button {
@@ -434,7 +439,7 @@ header {
   }
   
   .tab {
-    border: 0.3em solid lightblue;
+    border: 0.3em solid lightgray;
     border-radius: 25px;
     width: 90%;
     margin: 1.5em auto;
