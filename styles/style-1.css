@@ -51,12 +51,26 @@ body {
 
 #about-me {
   padding: 1rem 0 3rem 0;
+  background-color: #e8ecef;
 }
 
 footer {
   background-color: lightgray;
   display: flex;
   justify-content: center;
+}
+
+header, #about-this-content {
+  padding-bottom: 5%;
+}
+
+li {
+  margin-bottom: 2%;
+}
+
+h5 {
+  font-size: 1.3em;
+  margin-left: 3%;
 }
 
 /* -------- Why FAC section -------- */
@@ -100,10 +114,6 @@ h4 {
   top: -20px;
   background-color: #e8ecef;
   font-size: 2.5em;
-}
-
-.reason-text li {
-  margin-bottom: 2%;
 }
 
 /* -------- Interactive Elements -------- */
@@ -333,6 +343,7 @@ p {
 
 #intro {
   text-align: center;
+  padding-top: 2%;
 }
 
 /* ----- Image Elements -------- */
@@ -348,6 +359,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+#old-fac-img {
+  margin: auto;
+  max-height: 700px;
+  max-width: 80%;
 }
 
 /* Image Carousel */
