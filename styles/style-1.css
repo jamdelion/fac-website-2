@@ -73,6 +73,12 @@ h5 {
   margin-left: 3%;
 }
 
+/* -------- About me section -------- */
+
+#sparse-detail li {
+  text-align: center;
+}
+
 /* -------- About site section -------- */
 
 #about-this-content li {
@@ -271,6 +277,7 @@ input {
   top: 50px;
   left: 100px;
   transition: .25s 0s ease-in-out;
+  cursor: none;
 }
 
 #hamburger-links li { 
@@ -279,6 +286,7 @@ input {
 
 input:checked ~ #hamburger-links { 
   opacity: 1; 
+  cursor: pointer;
 }
 
 /* --------Detail scale-------- */
@@ -323,10 +331,15 @@ input:checked ~ #hamburger-links {
   position: relative;
   top: -10px;
   border: 1px solid gray;
+  cursor: pointer;
 }
 
 #circle3 {
   left: 2px;
+}
+
+#mark2 {
+  margin-left: 47px;
 }
 
 /* -------- Text Elements -------- */
