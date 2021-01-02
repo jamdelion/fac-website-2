@@ -55,6 +55,8 @@ body {
 
 footer {
   background-color: lightgray;
+  display: flex;
+  justify-content: center;
 }
 
 /* -------- Why FAC section -------- */
@@ -124,8 +126,11 @@ button {
 }
 
 #links {
-  text-align: center;
   padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+  min-width: 193px;
 }
 
 #links a {
@@ -159,6 +164,10 @@ button {
   right: 37px;
   transform-origin: center;
   transition: .5s ease-in-out;
+}
+
+#hamburger-menu {
+  z-index: 200;
 }
 
 .hamburger {
@@ -246,6 +255,10 @@ input {
   top: 50px;
   left: 100px;
   transition: .25s 0s ease-in-out;
+}
+
+#hamburger-links li { 
+  margin-bottom: 7%;
 }
 
 input:checked ~ #hamburger-links { 
