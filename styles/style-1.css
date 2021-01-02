@@ -115,6 +115,7 @@ button {
 
 .mn-button:hover {
   background-color: pink;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 #links {
