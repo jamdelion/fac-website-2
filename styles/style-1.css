@@ -73,6 +73,12 @@ h5 {
   margin-left: 3%;
 }
 
+/* -------- About site section -------- */
+
+#about-this-content li {
+  max-width: 95%;
+}
+
 /* -------- Why FAC section -------- */
 
 #why-fac {
@@ -287,6 +293,7 @@ input:checked ~ #hamburger-links {
 #detail-scale {
   width:80%;
   margin: auto;
+  padding-bottom: 5%;
 }
 
 .lines {
@@ -365,6 +372,7 @@ img {
   margin: auto;
   max-height: 700px;
   max-width: 80%;
+  padding: 3%;
 }
 
 /* Image Carousel */
