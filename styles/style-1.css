@@ -64,6 +64,11 @@ footer {
   padding: 0.5rem;
 }
 
+h4 {
+  font-family: "Fredoka One";
+  font-size: 1.75em;
+}
+
 .why-fac-content {
   width: 90%;
   display: flex;
