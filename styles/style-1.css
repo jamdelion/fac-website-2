@@ -282,11 +282,16 @@ input {
 
 #hamburger-links li { 
   margin-bottom: 7%;
+  display: none;
 }
 
 input:checked ~ #hamburger-links { 
   opacity: 1; 
   cursor: pointer;
+}
+
+input:checked ~ #hamburger-links li { 
+  display: block;
 }
 
 /* --------Detail scale-------- */
