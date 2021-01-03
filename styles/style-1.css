@@ -521,6 +521,11 @@ header {
   padding: 1rem 0 3rem 0;
 }
 
+#about-me {
+  background-color: white;
+  padding-bottom: 4%;
+}
+
 /* Why FAC section - desktop size */
 
 #why-fac {
