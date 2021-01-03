@@ -75,8 +75,43 @@ h5 {
 
 /* -------- About me section -------- */
 
-#sparse-detail li {
+/* #sparse-detail li {
   text-align: center;
+} */
+
+#sparse-detail, #more-detail, #most-detail {
+  margin: auto;
+  width: 85%;
+}
+
+.am-item {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3%;
+  margin-left: 4%;
+}
+
+.am-item-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.divider-strong {
+  color: gray;
+  font-weight: bold;
+}
+
+.am-desc {
+  color: black;
+}
+
+.divider-weak {
+  color: lightgray;
+}
+
+.detail {
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  color: gray;
 }
 
 /* -------- About site section -------- */
