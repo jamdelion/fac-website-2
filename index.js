@@ -105,4 +105,33 @@ colourPalette.addEventListener("click", () => {
     scrollToTop();
   });
 
+  // ------ LINK HIGHTLIGHTING --------------------------
+
+  let linkButtons = document.querySelectorAll(".linkToLinks"); 
+  let linkIcons = document.querySelectorAll(".linkIcon");
+
+  function makeLinksShake() {
+    linkIcons.forEach(function(icon) {
+      icon.animate(
+        [
+          {
+            transform: 'translateY(-10px)',
+            color: 'yellow'
+          },
+          {
+            transform: 'translateY(0px)'
+          }
+        ], {
+          duration: 1000,
+          easing: "ease"
+        });
+    })
+  };
+
+  linkButtons.forEach(function(button) {
+    button.addEventListener("click", () => {
+      makeLinksShake();
+    })
+  });
+
 });
