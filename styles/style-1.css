@@ -362,6 +362,10 @@ input:checked ~ #hamburger-links li {
   margin: auto;
 }
 
+.option {
+  cursor: pointer;
+}
+
 #detail-scale {
   width:80%;
   margin: auto;

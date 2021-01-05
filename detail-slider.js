@@ -79,8 +79,20 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
 
+    function selectCorrespondingCircle(target) {
+        var selectedCircle = target.getAttribute("data-linked-circle");
+        var circleId = document.getElementById(selectedCircle);
+        circleId.click();
+    };
+
     circleMarks.forEach(function(button) {
         button.addEventListener("click", changeDetailLevel)
     }); 
+
+    options.forEach(function(option) {
+        option.addEventListener("click", () => {
+            selectCorrespondingCircle(option);
+        });
+      });
 
 });
