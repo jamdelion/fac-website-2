@@ -18,9 +18,15 @@
 }
 
 .thick {
-  border-width: 3px !important;
+  border-width: 4px !important;
   border-color: #575656 !important;
+  font-weight: bold;
 }
+
+.filled {
+  background-color: lightgray !important;
+}
+
 
 /* -------- Structural Elements -------- */
 
@@ -382,12 +388,12 @@ input:checked ~ #hamburger-links li {
 }
 
 .circle-mark {
-  width: 20px;
+  width: 18px;
   border-radius: 50%;
   background-color: white;
-  height: 20px;
+  height: 18px;
   position: relative;
-  top: -10px;
+  top: -11px;
   border: 1px solid gray;
   cursor: pointer;
 }
