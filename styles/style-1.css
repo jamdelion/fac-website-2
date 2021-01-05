@@ -615,8 +615,12 @@ img {
     background-color: transparent;
   }
 
+  .why-fac-content {
+    width: 95%;
+  }
+
   .fac-reason {
-    width: 30%;
+    width: 45%;
     padding: 2% 8% 1% 8%;
     border: solid thin lightgray;
     border-radius: 7%;
@@ -705,7 +709,8 @@ img {
   /* ---- Image Carousel ----- */
 
   #slide-container {
-    height: 48vh;
+    height: 52vh;
+    padding: 0 0.5em 1em 0;
   }
 
   #img-nav-btns {
@@ -734,6 +739,10 @@ img {
     font-size: small;
   }
 
+  .images {
+    width: 97%;
+  }
+
   #prevNext {
     display: none;
   }
@@ -741,6 +750,7 @@ img {
   #playPause {
     transition: color 0.2s ease;
     cursor: pointer;
+    padding-bottom: 1%;
   }
 
   #playPause:hover {
