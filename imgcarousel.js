@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   function showImages(targetSlideIndex) {
-    console.log("n", targetSlideIndex);
     slideIndex = targetSlideIndex;
     if (slideIndex > images.length) {
       slideIndex = 1;
@@ -45,21 +44,17 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   });
 
-
   function changeSlide(increment) {
     showImages(slideIndex + increment);
   }
 
-
   // on click play slides
   playPause.onclick = function() {
     // does playbutton class contains "play" (true or false)
-    console.log("playPause clicked");
     var playing = !playPause.classList.toggle("play");
     // change icon from play to pause icon if slideshow playing
     playIcon.classList.toggle("hidden-img");
     pauseIcon.classList.toggle("hidden-img");
-    // if "play" not in classlist, playslides (start function)
     if (playing) {
       playSlides();
     }
@@ -78,12 +73,10 @@ document.addEventListener("DOMContentLoaded", function(){
   };
 
   prevButton.addEventListener("click", () => {
-    console.log("change slide -1");
     changeSlide(-1);
   });
 
   nextButton.addEventListener("click", () => {
-    console.log("change slide +1");
     changeSlide(1);
   });
 

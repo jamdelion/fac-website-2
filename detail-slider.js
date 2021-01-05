@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let line2 = document.getElementById("line2");
 
     function thicken(target) {
-        console.log("thickenLine");
         target.classList.toggle("thick");
     }
 
@@ -24,15 +23,12 @@ document.addEventListener("DOMContentLoaded", function(){
     };
 
     function unthickenAll(target) {
-        console.log("unthickenAll");
         if ((target.classList.contains("thick"))) {
         thicken(target);
         };
     };
 
     function changeDetailLevel(event) {
-        console.log("changeDetailLevel");
-
         // restore everything to not-thick
         circleMarks.forEach(unthickenAll);
         lines.forEach(unthickenAll);
@@ -49,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
         // use custom attributes to link content's id to button
         var selectedContentId = event.target.getAttribute("data-linked-text");
-        console.log(selectedContentId);
 
         const amDetails = document.querySelectorAll(".am-detail");
         var selectedContent = document.getElementById(selectedContentId);

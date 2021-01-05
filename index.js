@@ -61,11 +61,8 @@ colourPalette.addEventListener("click", () => {
   };
 
   function hideLinkedText(event) {
-    console.log("hideLinkedText");
     // use custom attributes to link content's id to button
     var selectedContentId = event.target.getAttribute("data-linked-text");
-    console.log(selectedContentId);
-
     const contentTabs = document.querySelectorAll(".tab");
     var selectedContent = document.getElementById(selectedContentId);
 
