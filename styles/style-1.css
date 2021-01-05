@@ -548,62 +548,72 @@ img {
 
 /* -------- Text elements-------- */
 
-h3 {
-  text-align: left;
-}
+  h3 {
+    text-align: left;
+  }
 
 /* -------- Structural elements-------- */
 
-#page-container {
-  flex: 1 0 auto;
-}
+  #page-container {
+    flex: 1 0 auto;
+  }
 
-#main-content-container {
-  display: flex;
-}
+  #main-content-container {
+    display: grid;
+    grid-template-columns: 32% auto;
+  }
 
-#why-fac, #about-me, #img-carousel {
-  padding: 0;
-}
+  #why-fac, #about-me, #img-carousel {
+    padding: 0;
+  }
 
-main {
-  padding-bottom: 5rem;
-}
+  main {
+    position: relative;
+    top: 11%;
+  }
 
-footer {
-  flex-shrink: 0;
-  background-color: transparent;
-}
+  footer {
+    flex-shrink: 0;
+    background-color: transparent;
+  }
 
-header {
-  padding: 1rem 0 3rem 0;
-}
+  header {
+    padding: 1rem 0 3rem 0;
+  }
 
-#about-me {
-  background-color: white;
-  padding-bottom: 4%;
-}
+  #about-me {
+    background-color: white;
+    padding-bottom: 4%;
+  }
 
-#top-nav {
-  justify-content: flex-start;
-  flex-direction: column;
-  position: fixed;
-  height: 100%;
-  background-color: red;
-}
+  #top-nav {
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    background-color: red;
+  }
+
+  /* #right-half {
+    max-width: 50%;
+  } */
+
+  #top-section {
+    max-width: 610px;
+  }
 
 /* About-me section - desktop size */
 
-#sparse-detail, #more-detail, #most-detail {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  #sparse-detail, #more-detail, #most-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
 /* Why FAC section - desktop size */
 
-#why-fac {
-  background-color: transparent;
-}
+  #why-fac {
+    background-color: transparent;
+  }
 
   .fac-reason {
     width: 30%;
@@ -625,15 +635,17 @@ header {
 
   #middle-nav {
     border-radius: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 68%;
     display: flex;
     justify-content: space-around;
     background-color: gray;
     color: white;
     font-family: sans-serif;
     font-size: 22px;
+    height: 80px;
+    position: fixed;
   }
   
   .mn-button {
