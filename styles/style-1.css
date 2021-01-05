@@ -584,6 +584,14 @@ header {
   padding-bottom: 4%;
 }
 
+#top-nav {
+  justify-content: flex-start;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  background-color: red;
+}
+
 /* About-me section - desktop size */
 
 #sparse-detail, #more-detail, #most-detail {
@@ -672,6 +680,11 @@ header {
 
   #scrollToTop {
     right: 1.5em;
+  }
+
+  #colour-mode-buttons {
+    display: flex;
+    flex-direction: column;
   }
 
   /* ---- Image Carousel ----- */
