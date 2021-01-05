@@ -84,4 +84,28 @@ colourPalette.addEventListener("click", () => {
       button.addEventListener("click", hideLinkedText)
   });
 
+
+  // ------ SCROLL TO TOP BUTTON --------------------------
+
+  let scrollBtn = document.getElementById("scrollToTop");
+
+  function showScrollBtn() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  };
+
+  window.onscroll = function() {showScrollBtn()};
+
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+
+  scrollBtn.addEventListener("click", () => {
+    scrollToTop();
+  });
+
 });
