@@ -6,7 +6,9 @@
 }
 
 .hidden-img, .invisible {
-  display: none;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
 .white {
@@ -359,7 +361,9 @@ input {
 
 #hamburger-links li { 
   margin-bottom: 7%;
-  display: none;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 input:checked ~ #hamburger-links { 
@@ -368,7 +372,9 @@ input:checked ~ #hamburger-links {
 }
 
 input:checked ~ #hamburger-links li { 
-  display: block;
+  position: static;
+  top: auto;
+  left: auto;
 }
 
 /* --------Detail scale-------- */
@@ -535,7 +541,9 @@ img {
 /* -------- Toggles-------- */
 
   .hidden {
-    display: none;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
   }
 
 /* -------- Text elements-------- */
@@ -570,6 +578,13 @@ header {
 #about-me {
   background-color: white;
   padding-bottom: 4%;
+}
+
+/* About-me section - desktop size */
+
+#sparse-detail, #more-detail, #most-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* Why FAC section - desktop size */
