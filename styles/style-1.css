@@ -562,6 +562,7 @@ img {
   #main-content-container {
     display: grid;
     grid-template-columns: 32% auto;
+    margin-left: 4vw;
   }
 
   main section {
@@ -575,7 +576,8 @@ img {
 
   footer {
     flex-shrink: 0;
-    background-color: transparent;
+    background-color: white;
+    z-index: 300;
   }
 
   header {
@@ -593,6 +595,7 @@ img {
     height: 100%;
     background-color: red;
     width: 4vw;
+    z-index: 301;
   }
 
   /* #right-half {
@@ -646,7 +649,7 @@ img {
     border-radius: 6px;
     /* margin-left: auto;
     margin-right: auto; */
-    width: 68%;
+    width: 66%;
     display: flex;
     justify-content: space-around;
     background-color: gray;
@@ -655,6 +658,7 @@ img {
     font-size: 22px;
     height: 80px;
     position: fixed;
+    z-index: 299;
   }
   
   .mn-button {
@@ -711,7 +715,7 @@ img {
     flex-direction: column;
     justify-content: space-around;
     height: 15vh;
-    font-size: 2em;
+    font-size: 1.6vw;
   }
 
   /* ---- Image Carousel ----- */
