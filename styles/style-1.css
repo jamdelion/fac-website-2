@@ -655,6 +655,7 @@ img {
     justify-content: center;
     width: 25%;
     cursor: pointer;
+    align-items: center;
   }
   
   #link-container {
@@ -666,6 +667,8 @@ img {
     border-radius: 25px;
     width: 90%;
     margin: 1.5em auto;
+    overflow: auto;
+    max-height: 73vh;
   }
 
   /* -------- Interactive Elements -------- */
