@@ -550,6 +550,7 @@ img {
 
   h3 {
     text-align: left;
+    padding: 1% 0 0 3%
   }
 
 /* -------- Structural elements-------- */
@@ -563,8 +564,8 @@ img {
     grid-template-columns: 32% auto;
   }
 
-  #why-fac, #about-me, #img-carousel {
-    padding: 0;
+  main section {
+    padding: 0 !important;
   }
 
   main {
@@ -583,7 +584,6 @@ img {
 
   #about-me {
     background-color: white;
-    padding-bottom: 4%;
   }
 
   #top-nav {
@@ -668,7 +668,7 @@ img {
     width: 90%;
     margin: 1.5em auto;
     overflow: auto;
-    max-height: 73vh;
+    height: 78vh;
   }
 
   /* -------- Interactive Elements -------- */
@@ -705,7 +705,7 @@ img {
   /* ---- Image Carousel ----- */
 
   #slide-container {
-    height: 800px;
+    height: 48vh;
   }
 
   #img-nav-btns {

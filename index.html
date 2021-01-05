@@ -79,247 +79,249 @@
         <main>
           <!-- About Me -->
           <section id="about-me" class="hidden tab">
-            <h3>About Me</h3>
+            <div class="tab-content">
+              <h3>About Me</h3>
 
-            <div id="detail-scale">
-              <div class="lines">
-                <div class="line thick" id="line1"></div>
-                <div class="line" id="line2"></div>
+              <div id="detail-scale">
+                <div class="lines">
+                  <div class="line thick" id="line1"></div>
+                  <div class="line" id="line2"></div>
+                </div>
+                <div id="circles">
+                  <div class="circle-mark filled" id="circle1" data-linked-text="sparse-detail"></div>
+                  <div class="circle-mark thick" id="circle2" data-linked-text="more-detail"></div>
+                  <div class="circle-mark" id="circle3" data-linked-text="most-detail"></div>
+                </div>
+                <div id="options">
+                  <div class="option" id="mark1" data-linked-circle="circle1">Sparse</div>
+                  <div class="option thick" id="mark2" data-linked-circle="circle2">Default</div>
+                  <div class="option" id="mark3" data-linked-circle="circle3">Very detailed</div>
+                </div>
               </div>
-              <div id="circles">
-                <div class="circle-mark filled" id="circle1" data-linked-text="sparse-detail"></div>
-                <div class="circle-mark thick" id="circle2" data-linked-text="more-detail"></div>
-                <div class="circle-mark" id="circle3" data-linked-text="most-detail"></div>
-              </div>
-              <div id="options">
-                <div class="option" id="mark1" data-linked-circle="circle1">Sparse</div>
-                <div class="option thick" id="mark2" data-linked-circle="circle2">Default</div>
-                <div class="option" id="mark3" data-linked-circle="circle3">Very detailed</div>
-              </div>
-            </div>
 
-            <div id="sparse-detail" class="invisible am-detail">
-              <div class="am-section">
-                <h4>Basic Stats</h4>
-                <div class="am-item">
-                  <span class="am-item-title">Name</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Jo</span>
+              <div id="sparse-detail" class="invisible am-detail">
+                <div class="am-section">
+                  <h4>Basic Stats</h4>
+                  <div class="am-item">
+                    <span class="am-item-title">Name</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Jo</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Pronouns</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">they/them</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Lives</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">In Cambridge</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Diet</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Herbivore</span>
+                  </div>
                 </div>
-                <div class="am-item">
-                  <span class="am-item-title">Pronouns</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">they/them</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Lives</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">In Cambridge</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Diet</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Herbivore</span>
+                <div class="am-section">
+                  <h4>Loves</h4>
+                  <div class="am-item">
+                    <span class="am-item-title">> Cats</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">> Drums</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">> Skateparks</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">> Workers' coops</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">> Open-source software</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">> Donuts</span>
+                  </div>
                 </div>
               </div>
-              <div class="am-section">
-                <h4>Loves</h4>
-                <div class="am-item">
-                  <span class="am-item-title">> Cats</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">> Drums</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">> Skateparks</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">> Workers' coops</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">> Open-source software</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">> Donuts</span>
-                </div>
-              </div>
-            </div>
 
-            <div id="more-detail" class="am-detail">
-              <div class="am-section">
-                <h4>Basic Stats</h4>
-                <div class="am-item">
-                  <span class="am-item-title">Name</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Jo</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Also known as Jojo</span>
+              <div id="more-detail" class="am-detail">
+                <div class="am-section">
+                  <h4>Basic Stats</h4>
+                  <div class="am-item">
+                    <span class="am-item-title">Name</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Jo</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Also known as Jojo</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Pronouns</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">they/them</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Preferred</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Lives</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">In Cambridge</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Since 2012</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Diet</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Herbivore</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Since 2014</span>
+                  </div>
                 </div>
-                <div class="am-item">
-                  <span class="am-item-title">Pronouns</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">they/them</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Preferred</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Lives</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">In Cambridge</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Since 2012</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Diet</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Herbivore</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Since 2014</span>
+                <div class="am-section">
+                  <h4>Loves</h4>
+                  <div class="am-item">
+                    <span class="am-item-title">Cats</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">I currently have two young black fluffy cats called Marmite and Malteaser</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">See photos</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Drums</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">I drum for a local 10-piece funk band</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Colonel Spanky's Love Ensemble</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Skateparks</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Rollerblading and now somewhat obsessed with the DIY skate scene...</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Since July 2020</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Donuts</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">My plan B if I don't get into FAC is to open a vegan donuts and skates shop!</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Semi-serious</span>
+                  </div>
                 </div>
               </div>
-              <div class="am-section">
-                <h4>Loves</h4>
-                <div class="am-item">
-                  <span class="am-item-title">Cats</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">I currently have two young black fluffy cats called Marmite and Malteaser</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">See photos</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Drums</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">I drum for a local 10-piece funk band</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Colonel Spanky's Love Ensemble</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Skateparks</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Rollerblading and now somewhat obsessed with the DIY skate scene...</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Since July 2020</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Donuts</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">My plan B if I don't get into FAC is to open a vegan donuts and skates shop!</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Semi-serious</span>
-                </div>
-              </div>
-            </div>
 
-            <div id="most-detail" class="invisible am-detail">
-              <div class="am-section">
-                <h4>Basic Stats</h4>
-                <div class="am-item">
-                  <span class="am-item-title">Name</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Jo</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Also known as Jojo</span>
+              <div id="most-detail" class="invisible am-detail">
+                <div class="am-section">
+                  <h4>Basic Stats</h4>
+                  <div class="am-item">
+                    <span class="am-item-title">Name</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Jo</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Also known as Jojo</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Pronouns</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">they/them</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Preferred</span>
+                    <div>> She/her are also acceptable</div>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Lives</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">In Cambridge</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Since 2012</span>
+                    <div>> I'm originally from the North East of England!</div>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Diet</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Herbivore</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Since 2014</span>
+                  </div>
                 </div>
-                <div class="am-item">
-                  <span class="am-item-title">Pronouns</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">they/them</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Preferred</span>
-                  <div>> She/her are also acceptable</div>
+                <div class="am-section">
+                  <h4>Loves</h4>
+                  <div class="am-item">
+                    <span class="am-item-title">Cats</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">I currently have two young black fluffy cats called Marmite and Malteaser</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">See photos</span>
+                    <div>> I sometimes foster cats for a local shelter too.</div>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Drums</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">I drum for a local 10-piece funk band</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Colonel Spanky's Love Ensemble</span>
+                    <div>> Check out our social media here.</div>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Skateparks</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Rollerblading and now somewhat obsessed with the DIY skate scene...</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Since July 2020</span>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Donuts</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">My plan B if I don't get into FAC is to open a vegan donuts and skates shop!</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Semi-serious</span>
+                  </div>
                 </div>
-                <div class="am-item">
-                  <span class="am-item-title">Lives</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">In Cambridge</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Since 2012</span>
-                  <div>> I'm originally from the North East of England!</div>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Diet</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Herbivore</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Since 2014</span>
-                </div>
-              </div>
-              <div class="am-section">
-                <h4>Loves</h4>
-                <div class="am-item">
-                  <span class="am-item-title">Cats</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">I currently have two young black fluffy cats called Marmite and Malteaser</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">See photos</span>
-                  <div>> I sometimes foster cats for a local shelter too.</div>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Drums</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">I drum for a local 10-piece funk band</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Colonel Spanky's Love Ensemble</span>
-                  <div>> Check out our social media here.</div>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Skateparks</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Rollerblading and now somewhat obsessed with the DIY skate scene...</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Since July 2020</span>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Donuts</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">My plan B if I don't get into FAC is to open a vegan donuts and skates shop!</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Semi-serious</span>
-                </div>
-              </div>
-              <div class="am-section">
-                <h4>Employment</h4>
-                <div class="am-item">
-                  <span class="am-item-title">Skateistan (Skateboarding NGO)</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Web intern</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Nov 2020 - present</span>
-                  <div>> Mainly fixing CSS bugs and learning a little bit of PHP.</div>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Metaswitch Networks</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Customer Care Engineer</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">June 2020 - Dec 2020</span>
-                  <div>> Troubleshooting customer network issues. </div>
-                  <div>> Running software upgrades. </div>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Metaswitch Networks</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Graduate Software Engineer</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">June 2019 - June 2020</span>
-                  <div>> Learning Python and C...I didn't enjoy this job and applied for FAC a few months in. </div>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Arjuna Wholefoods - vegetarian worker's cooperative</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">Worker/Member</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Nov 2017 - May 2019</span>
-                  <div>> Contributing democratically to how the shop was run. </div>
-                </div>
-                <div class="am-item">
-                  <span class="am-item-title">Self-employed</span>
-                  <span class="divider-strong"> // </span>
-                  <span class="am-desc">The Pod vegan pop-up cafe</span>
-                  <span class="divider-weak"> // </span>
-                  <span class="detail">Oct 2016 - May 2019</span>
-                  <div>> My long-term plan was to make this Cambridge’s first vegan, zero-waste workers’ cooperative cafe!</div>
-                  <div>> Read more about it here.</div>
+                <div class="am-section">
+                  <h4>Employment</h4>
+                  <div class="am-item">
+                    <span class="am-item-title">Skateistan (Skateboarding NGO)</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Web intern</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Nov 2020 - present</span>
+                    <div>> Mainly fixing CSS bugs and learning a little bit of PHP.</div>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Metaswitch Networks</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Customer Care Engineer</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">June 2020 - Dec 2020</span>
+                    <div>> Troubleshooting customer network issues. </div>
+                    <div>> Running software upgrades. </div>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Metaswitch Networks</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Graduate Software Engineer</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">June 2019 - June 2020</span>
+                    <div>> Learning Python and C...I didn't enjoy this job and applied for FAC a few months in. </div>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Arjuna Wholefoods - vegetarian worker's cooperative</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">Worker/Member</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Nov 2017 - May 2019</span>
+                    <div>> Contributing democratically to how the shop was run. </div>
+                  </div>
+                  <div class="am-item">
+                    <span class="am-item-title">Self-employed</span>
+                    <span class="divider-strong"> // </span>
+                    <span class="am-desc">The Pod vegan pop-up cafe</span>
+                    <span class="divider-weak"> // </span>
+                    <span class="detail">Oct 2016 - May 2019</span>
+                    <div>> My long-term plan was to make this Cambridge’s first vegan, zero-waste workers’ cooperative cafe!</div>
+                    <div>> Read more about it here.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -327,93 +329,96 @@
 
           <!-- About this site -->
           <section id="about-this" class="hidden tab">
-            <h3>About This Site</h3>
-            <div id="about-this-content">
-              <p>Recognise this?</p>
-              <a href="https://joko208.github.io/"><img src="images/old-fac.png" id="old-fac-img" alt="A screenshot of Jo's previous FAC application website."></a>
-              <p>Yes, that's my last FAC application website, a.k.a, the first website I ever made! (<a href="https://github.com/joko208/joko208.github.io" target="_blank">source code here</a>)</p>
-              <p>I applied to FAC last year, and was offered a place, but I was unable to take it due to <i>anachronistic</i> notice periods. I then put off applying to the next cohort due to uncertainty around the pandemic. </p>
-              <p>Ever since I discovered FAC, a little over two years ago, a tiny voice  in my head has been whispering: <i>*this is where you're meant to be...* </i> </p>
-              <h5>What's different about my site this time?</h5>
-              <ul>
-                <li>I developed it mobile-first</li>
-                <li>My CSS is structured more cleanly and methodically</li>
-                <li>I pushed myself to try new things, like the <a href="#colour-mode-buttons">random stylesheet generator</a> and <a href="#detail-scale">detail slider</a>.</li>
-                <li>I was conscious of <a href="https://www.a11yproject.com/checklist/" target="_blank">accessibility concerns</a> and tried to make the site as user-friendly as possible.</li>
-              </ul>
+            <div class="tab-content">
+              <h3>About This Site</h3>
+              <div id="about-this-content">
+                <p>Recognise this?</p>
+                <a href="https://joko208.github.io/"><img src="images/old-fac.png" id="old-fac-img" alt="A screenshot of Jo's previous FAC application website."></a>
+                <p>Yes, that's my last FAC application website, a.k.a, the first website I ever made! (<a href="https://github.com/joko208/joko208.github.io" target="_blank">source code here</a>)</p>
+                <p>I applied to FAC last year, and was offered a place, but I was unable to take it due to <i>anachronistic</i> notice periods. I then put off applying to the next cohort due to uncertainty around the pandemic. </p>
+                <p>Ever since I discovered FAC, a little over two years ago, a tiny voice  in my head has been whispering: <i>*this is where you're meant to be...* </i> </p>
+                <h5>What's different about my site this time?</h5>
+                <ul>
+                  <li>I developed it mobile-first</li>
+                  <li>My CSS is structured more cleanly and methodically</li>
+                  <li>I pushed myself to try new things, like the <a href="#colour-mode-buttons">random stylesheet generator</a> and <a href="#detail-scale">detail slider</a>.</li>
+                  <li>I was conscious of <a href="https://www.a11yproject.com/checklist/" target="_blank">accessibility concerns</a> and tried to make the site as user-friendly as possible.</li>
+                </ul>
+              </div>
             </div>
-
           </section>
 
         <!-- Why FAC -->
           <section id="why-fac" class="hidden tab">
-            <h3>Why FAC?</h3>
-            <div id="why-content">
-              <div class="why-fac-content">
-                <div class="fac-reason">
-                  <i class="fas fa-code fa-2x" id="code-icon"></i>
-                  <h4>Values</h4>
-                  <div class="reason-text">
-                    <ul>
-                      <li>The values of F&C strongly align with my own.</li>
-                      <li>I aim to define my career by <strong>making a difference to the world</strong>.
-                      <li>I want to encourage <strong>more people from under-represented groups in tech</strong> to learn to code. </li>
-                      <li><strong>Cooperatives are my favorite</strong> form of organisation! (See reason three for gushing about coops)</li>
-                    </ul>
+            <div class="tab-content">
+              <h3>Why FAC?</h3>
+              <div id="why-content">
+                <div class="why-fac-content">
+                  <div class="fac-reason">
+                    <i class="fas fa-code fa-2x" id="code-icon"></i>
+                    <h4>Values</h4>
+                    <div class="reason-text">
+                      <ul>
+                        <li>The values of F&C strongly align with my own.</li>
+                        <li>I aim to define my career by <strong>making a difference to the world</strong>.
+                        <li>I want to encourage <strong>more people from under-represented groups in tech</strong> to learn to code. </li>
+                        <li><strong>Cooperatives are my favorite</strong> form of organisation! (See reason three for gushing about coops)</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="fac-reason">
-                  <i class="fas fa-code fa-2x" id="code-icon"></i>
-                  <h4>Community</h4>
-                  <div class="reason-text">
-                    <ul>
-                      <li>I want a learning environment where I am supported by <strong>like-minded people</strong> who share my enthusiasm, commitment and values.</li>
-                      <li><strong>Nobody gets left behind!</strong></li>
-                      <li>I want to join the <strong>alumni community</strong> that champions the power of <strong>tech for good</strong> throughout the globe.</li>
-                    </ul>
+                  <div class="fac-reason">
+                    <i class="fas fa-code fa-2x" id="code-icon"></i>
+                    <h4>Community</h4>
+                    <div class="reason-text">
+                      <ul>
+                        <li>I want a learning environment where I am supported by <strong>like-minded people</strong> who share my enthusiasm, commitment and values.</li>
+                        <li><strong>Nobody gets left behind!</strong></li>
+                        <li>I want to join the <strong>alumni community</strong> that champions the power of <strong>tech for good</strong> throughout the globe.</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="fac-reason">
-                  <i class="fas fa-code fa-2x" id="code-icon"></i>
-                  <h4>Cooperative</h4>
-                  <div class="reason-text">
-                    <ul>
-                      <li>I &#10084; coops! I tried to set up a <a href="https://www.facebook.com/ThePodCambridge/" target="_blank">workers' coop vegan café</a>, and previously worked as a member of a <a href="https://arjunawholefoods.co.uk/pages/about" target="_blank">vegetarian workers' coop</a> shop.</li>
-                      <li>I'm 100% behind the principles of <strong>collective decision-making, community concern</strong> and <strong>inter-cooperative support</strong>.</li>
-                      <li>I believe in the <strong>resilience</strong> and <strong>creativity</strong> of coops, and hope that my future lies in a tech coop.</li>
-                    </ul>
+                  <div class="fac-reason">
+                    <i class="fas fa-code fa-2x" id="code-icon"></i>
+                    <h4>Cooperative</h4>
+                    <div class="reason-text">
+                      <ul>
+                        <li>I &#10084; coops! I tried to set up a <a href="https://www.facebook.com/ThePodCambridge/" target="_blank">workers' coop vegan café</a>, and previously worked as a member of a <a href="https://arjunawholefoods.co.uk/pages/about" target="_blank">vegetarian workers' coop</a> shop.</li>
+                        <li>I'm 100% behind the principles of <strong>collective decision-making, community concern</strong> and <strong>inter-cooperative support</strong>.</li>
+                        <li>I believe in the <strong>resilience</strong> and <strong>creativity</strong> of coops, and hope that my future lies in a tech coop.</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="fac-reason">
-                  <i class="fas fa-code fa-2x" id="code-icon"></i>
-                  <h4>Diversity</h4>
-                  <div class="reason-text">
-                    <ul>
-                      <li>I want to learn <strong>new ways of thinking</strong> from an environment where diversity of experience is represented.</li>
-                      <li>I want to learn in a <strong>safe space</strong>, where womxn and members of other minority groups are seen, heard and listened to.</li>
-                    </ul>
+                  <div class="fac-reason">
+                    <i class="fas fa-code fa-2x" id="code-icon"></i>
+                    <h4>Diversity</h4>
+                    <div class="reason-text">
+                      <ul>
+                        <li>I want to learn <strong>new ways of thinking</strong> from an environment where diversity of experience is represented.</li>
+                        <li>I want to learn in a <strong>safe space</strong>, where womxn and members of other minority groups are seen, heard and listened to.</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="fac-reason">
-                  <i class="fas fa-code fa-2x" id="code-icon"></i>
-                  <h4>Career</h4>
-                  <div class="reason-text">
-                    <ul>
-                      <li>I'm serious about making a career in tech - a sector which is <strong>dynamic, flexible and full of possibility!</strong></li>
-                      <li>FAC has an enviable list of cool-looking employer links. <span id="smirk">&#x1F60F;</span>  </li>
-                      <li>The full-time, focused course will ensure that this becomes <strong>a journey of a lifetime!</strong></li>
-                    </ul>
+                  <div class="fac-reason">
+                    <i class="fas fa-code fa-2x" id="code-icon"></i>
+                    <h4>Career</h4>
+                    <div class="reason-text">
+                      <ul>
+                        <li>I'm serious about making a career in tech - a sector which is <strong>dynamic, flexible and full of possibility!</strong></li>
+                        <li>FAC has an enviable list of cool-looking employer links. <span id="smirk">&#x1F60F;</span>  </li>
+                        <li>The full-time, focused course will ensure that this becomes <strong>a journey of a lifetime!</strong></li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="fac-reason">
-                  <i class="fas fa-code fa-2x" id="code-icon"></i>
-                  <h4>Pay It Forward</h4>
-                  <div class="reason-text" id="pay-it-forward">
-                    <ul>
-                      <li>The coding community has given so much to me already, through free mentoring schemes such as <a href="www.codebar.io" target="_blank">CodeBar</a> and <a href="https://djangogirls.org/" target="_blank">DjangoGirls</a>, and the FAC meetups and resources.</li>
-                      <li>I have also benefited from other empowerment projects, such as the Prince's Trust.</li>
-                      <li>It's only right to aim to pass what I have learnt to others, and benefit everyone as a collective. <strong>#teamwork</strong></li>
-                    </ul>
+                  <div class="fac-reason">
+                    <i class="fas fa-code fa-2x" id="code-icon"></i>
+                    <h4>Pay It Forward</h4>
+                    <div class="reason-text" id="pay-it-forward">
+                      <ul>
+                        <li>The coding community has given so much to me already, through free mentoring schemes such as <a href="www.codebar.io" target="_blank">CodeBar</a> and <a href="https://djangogirls.org/" target="_blank">DjangoGirls</a>, and the FAC meetups and resources.</li>
+                        <li>I have also benefited from other empowerment projects, such as the Prince's Trust.</li>
+                        <li>It's only right to aim to pass what I have learnt to others, and benefit everyone as a collective. <strong>#teamwork</strong></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -422,34 +427,36 @@
 
           <!-- Img Carousel -->
           <section id="img-carousel" class="hidden tab">
-            <h3>Images</h3>
-            <div id="slide-container">
-              <div id="img-wrapper">
-                <img src="images/cat1.JPG" alt="cat pic" class="images" id="photo1">
-                <img src="images/cat2.jpg" alt="cat pic" class="images hidden-img" id="photo2">
-                <img src="images/cat3.jpg" alt="cat pic" class="images hidden-img" id="photo3">
-              </div>
-              <div id="img-nav-btns">
-                <div class="img-nav active">01</div>
-                <div class="img-nav">02</div>
-                <div class="img-nav">03</div>
-              </div>
-              <div id="prevNext">
-                <!-- Previous button -->
-                <div class="prev">
-                  <i class="fas fa-chevron-circle-left fa-4x white" id="prev-icon"></i>
+            <div class="tab-content">
+              <h3>Images</h3>
+              <div id="slide-container">
+                <div id="img-wrapper">
+                  <img src="images/cat1.JPG" alt="cat pic" class="images" id="photo1">
+                  <img src="images/cat2.jpg" alt="cat pic" class="images hidden-img" id="photo2">
+                  <img src="images/cat3.jpg" alt="cat pic" class="images hidden-img" id="photo3">
                 </div>
-              <!-- Next button -->
-                <div class="next">
-                  <i class="fas fa-chevron-circle-right fa-4x white" id="next-icon"></i>
+                <div id="img-nav-btns">
+                  <div class="img-nav active">01</div>
+                  <div class="img-nav">02</div>
+                  <div class="img-nav">03</div>
+                </div>
+                <div id="prevNext">
+                  <!-- Previous button -->
+                  <div class="prev">
+                    <i class="fas fa-chevron-circle-left fa-4x white" id="prev-icon"></i>
+                  </div>
+                <!-- Next button -->
+                  <div class="next">
+                    <i class="fas fa-chevron-circle-right fa-4x white" id="next-icon"></i>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Play/Pause button -->
-            <div class="pause play" id="playPause">
-              <div id="playIcon" class=""> <i class="fas fa-play fa-2x black" id="playIcon"></i></div>
-              <div id="pauseIcon" class="hidden-img"><i class="fas fa-pause fa-2x black"></i></div>
+              <!-- Play/Pause button -->
+              <div class="pause play" id="playPause">
+                <div id="playIcon" class=""> <i class="fas fa-play fa-2x black" id="playIcon"></i></div>
+                <div id="pauseIcon" class="hidden-img"><i class="fas fa-pause fa-2x black"></i></div>
+              </div>
             </div>
           </section>
         </main>
