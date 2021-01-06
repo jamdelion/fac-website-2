@@ -578,6 +578,8 @@ img {
 
   header {
     padding: 1rem 0 3rem 0;
+    width: 28vw;
+    margin-top: 26vh;
   }
 
   #about-me {
@@ -585,13 +587,12 @@ img {
   }
 
   #top-nav {
-    justify-content: flex-start;
-    flex-direction: column;
     position: fixed;
-    height: 100%;
-    background-color: red;
-    width: 4vw;
+    height: 52px;
+    background-color: gray;
+    width: 9vw;
     z-index: 301;
+    left: 0%
   }
 
   /* #right-half {
@@ -603,7 +604,7 @@ img {
   }
 
   #jo-img {
-    width: 55%;
+    width: 80%;
   }
 
 /* About-me section - desktop size */
@@ -642,19 +643,17 @@ img {
   /* Middle Nav */
 
   #middle-nav {
-    border-radius: 6px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    width: 66%;
+    width: 91%;
     display: flex;
     justify-content: space-around;
     background-color: gray;
     color: white;
     font-family: sans-serif;
-    font-size: 22px;
-    height: 80px;
-    position: fixed;
+    font-size: 20px;
+    height: 60px;
+    position: absolute;
     z-index: 299;
+    right: 0;
   }
   
   .mn-button {
@@ -712,9 +711,7 @@ img {
 
   #colour-mode-buttons {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    height: 15vh;
     font-size: 1.6vw;
   }
 
@@ -729,7 +726,7 @@ img {
     display: flex;
     position: absolute;
     max-width: 0%;
-    right: 8%;
+    right: 14%;
     top: 37%;
     flex-direction: column;
     justify-content: space-evenly;
@@ -772,7 +769,43 @@ img {
 }
 /* end of media query: min-width: 800px */
 
+@media (min-width: 1000px) {
 
+  header {
+    width: auto;
+    margin-top: 0;
+  }
+
+  #colour-mode-buttons {
+    flex-direction: column;
+    height: 15vh;
+  }
+
+  #top-nav {
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    background-color: red;
+    width: 4vw;
+  }
+
+  #middle-nav {
+    border-radius: 6px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 66%;
+    height: 80px;
+    position: fixed;
+    right: auto;
+    font-size: 22px;
+  }
+
+  #jo-img {
+    width: 55%;
+  }
+}
+  
 @media (min-width: 1200px) {
 
   .fac-reason {
@@ -784,4 +817,7 @@ img {
     width: 100%;
   }
 
+  #img-nav-btns {
+    right: 9%;
+  }
 }
