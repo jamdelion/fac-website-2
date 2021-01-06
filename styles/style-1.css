@@ -512,9 +512,20 @@ img {
 #prevNext {
   display: flex;
   justify-content: space-between;
-  margin: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
   position: relative;
-  top: -70%;
+  top: -57%;
+}
+
+#prevNext i {
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+#prevNext i:hover, #prevNext i:focus {
+  opacity: 1;
 }
 
 #playPause {
@@ -529,7 +540,11 @@ img {
 
 #playIcon, #pauseIcon {
   margin: 5px 5px 0px 5px;
-  transition: color 1s ease;
+  transition: color 0.5s ease;
+}
+
+#playIcon:hover, #pauseIcon:hover {
+  color: gray;
 }
 
 #img-nav-btns {
