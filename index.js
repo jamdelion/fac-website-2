@@ -48,7 +48,7 @@ colourPalette.addEventListener("click", () => {
 
   // ------ MIDDLE NAV BUTTONS --------------------------
 
-  const middleNavButtons = document.querySelectorAll(".nav-button"); // array
+  const middleNavButtons = document.querySelectorAll(".mn-button");
 
   function hideElement(target) {
     target.classList.toggle("hidden");
@@ -80,7 +80,6 @@ colourPalette.addEventListener("click", () => {
   middleNavButtons.forEach(function(button) {
       button.addEventListener("click", hideLinkedText)
   });
-
 
   // ------ SCROLL TO TOP BUTTON --------------------------
 
