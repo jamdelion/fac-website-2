@@ -680,6 +680,10 @@ img {
     height: 78vh;
   }
 
+  .mn-button i {
+    padding-right: 10px;
+  }
+
   /* -------- Interactive Elements -------- */
 
   #palette-switch {
