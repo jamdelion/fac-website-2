@@ -85,6 +85,10 @@ h5 {
   margin-left: 3%;
 }
 
+#nothingHere {
+  display: none;
+}
+
 /* -------- About me section -------- */
 
 /* #sparse-detail li {
@@ -149,6 +153,8 @@ h4 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  background-color: white;
+  z-index: 2;
 }
 
 #why-content {
@@ -610,6 +616,56 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
+  #nothingHere {
+    display: block;
+    position: absolute;
+    top: 38vh;
+    left: 55vw;
+    color: gray;
+    z-index: 0;
+  }
+
+  #nothingHere p {
+    text-align: center;
+    font-family: "Montserrat";
+  }
+
+  #oops {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #nothingHere i {
+    margin-left: 30%;
+    transition: transform 0.7s ease;
+  }
+
+  #nothingHere i:hover {
+    transform: translate(0px, -20px);
+  }
+
+  #nothingHere img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #top-left-corner, #bottom-right-corner {
+    width: 1%;
+    padding: 4%;
+  }
+
+  #top-left-corner {
+    border-left: thick dashed lightgray;
+    border-top: thick dashed lightgray; 
+  }
+
+  #bottom-right-corner {
+    border-right: thick dashed lightgray;
+    border-bottom: thick dashed lightgray; 
+    float: right;
+  }
+
 /* Why FAC section - desktop size */
 
   #why-fac {
@@ -667,12 +723,14 @@ img {
   }
   
   .tab {
+    background-color: white;
     border: 0.3em solid lightgray;
     border-radius: 25px;
     width: 90%;
     margin: 1.5em auto;
     overflow: auto;
     height: 78vh;
+    z-index: 2;
   }
 
   .mn-button i, .am-item i {
