@@ -680,7 +680,7 @@ img {
     height: 78vh;
   }
 
-  .mn-button i {
+  .mn-button i, .am-item i {
     padding-right: 10px;
   }
 
