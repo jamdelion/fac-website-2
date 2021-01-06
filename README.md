@@ -8,6 +8,18 @@ You can view the application website at the following link:
 
 :star: [Website link](http://joko208.github.io) :star:
 
+It fulfils the following criteria:
+
+- [x] All code written by me
+- [x] No external libraries (e.g. no Bootstrap, React or GitHub Pages themes)
+- [x] Hosted on GitHub Pages 
+- [x] Uses semantic HTML5 elements
+- [x] CSS grid or flexbox layout
+- [x] DOM event listeners for user interaction (e.g. click, keydown) 
+- [x] DOM updates in response to user interaction
+- [x] Links back to my GitHub repo, Codewars and FreeCodeCamp profiles.
+- [x] Written in vanilla JS, HTML and CSS only.
+
 
 ### Other pre-requisites
 
