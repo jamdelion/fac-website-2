@@ -133,4 +133,19 @@ colourPalette.addEventListener("click", () => {
     })
   });
 
+  // ----------- CLOSE HAMBURGER MENU ---------
+
+  let hblinks = document.querySelectorAll(".inner-hamburger");
+  let checkbox = document.getElementById('hidden-checkbox');
+
+  function closeHamburgerMenu(event) {
+    checkbox.checked = false;
+  }
+
+  hblinks.forEach(function(button) {
+    button.addEventListener("click", () => {
+      closeHamburgerMenu();
+    })
+  });
+
 });
