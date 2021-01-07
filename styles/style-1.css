@@ -610,7 +610,7 @@ img {
   header {
     padding: 1rem 0 3rem 0;
     width: 28vw;
-    margin-top: 26vh;
+    margin-top: 19vh;
   }
 
   #about-me {
@@ -632,6 +632,7 @@ img {
 
   #jo-img {
     width: 80%;
+    border: solid 12px lightgray;
   }
 
 /* About-me section - desktop size */
@@ -649,10 +650,11 @@ img {
   #nothingHere {
     display: block;
     position: absolute;
-    top: 38vh;
+    top: 30vh;
     left: 55vw;
     color: gray;
     z-index: 0;
+    margin-right: 5%;
   }
 
   #nothingHere p {
