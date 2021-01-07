@@ -344,6 +344,7 @@ input:checked + label {
     background: white;
     box-shadow: 3px 3px 8px gray;
     z-index: 20;
+    cursor: default;
 }
 
 input {
@@ -355,10 +356,12 @@ input {
   opacity: 0;
   z-index: 200;
   position: fixed;
-  top: 50px;
-  left: 100px;
+  top: 5vh;
+  left: 16vw;
   transition: .25s 0s ease-in-out;
   cursor: none;
+  font-family: "Montserrat";
+  font-size: 2.5vh;
 }
 
 #hamburger-links li { 
@@ -370,13 +373,18 @@ input {
 
 input:checked ~ #hamburger-links { 
   opacity: 1; 
-  cursor: pointer;
+  cursor: auto;
 }
 
 input:checked ~ #hamburger-links li { 
   position: static;
   top: auto;
   left: auto;
+  transition: color 0.5s ease;
+}
+
+input:checked ~ #hamburger-links li:hover { 
+  color: black;
 }
 
 /* --------Detail scale-------- */
