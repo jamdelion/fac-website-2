@@ -91,6 +91,10 @@ header {
   padding-bottom: 5%;
 }
 
+#about-this-content p {
+  max-width: 66ch;
+}
+
 li {
   margin-bottom: 2%;
 }
@@ -143,11 +147,14 @@ li {
 /* -------- About site section -------- */
 
 #about-this-content li {
-  max-width: 95%;
   font-family: "Nunito";
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 1.5%;
+}
+
+#whats-different {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 66ch;
 }
 
 /* -------- Why FAC section -------- */
@@ -485,15 +492,16 @@ h3 {
 h5 {
   font-size: 1.5em;
   margin-left: 3%;
-  font-family: "Montserrat", Verdana, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   letter-spacing: 2.5px;
+  padding-top: 2%;
 }
 
 p {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  font-family: "Nunito", Verdana, sans-serif;
+  font-family: "Nunito", Arial, sans-serif;
 }
 
 #intro {
@@ -673,7 +681,7 @@ img {
 
   #jo-img {
     width: 80%;
-    border: 12px lightgray;
+    border: solid 12px lightgray;
   }
 
 /* About-me section - desktop size */
