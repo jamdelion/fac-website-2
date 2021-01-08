@@ -7,7 +7,7 @@ function randomStyleOnLoad() {
   let stylesheet = document.createElement('link');
   stylesheet.rel  = 'stylesheet';
   stylesheet.id = "page-style";
-  stylesheet.href = 'styles/style-' + (Math.floor(Math.random()*2)+1) + '.css';
+  stylesheet.href = 'styles/style-' + (Math.floor(Math.random()*3)+1) + '.css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
   };
 
