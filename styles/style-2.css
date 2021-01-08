@@ -384,7 +384,7 @@ input {
    position: absolute;
 }
 
-#hamburger-links { 
+#hamburger-links {
   opacity: 0;
   z-index: 200;
   position: fixed;
@@ -396,7 +396,7 @@ input {
   font-size: 2.5vh;
 }
 
-#hamburger-links li { 
+#hamburger-links li {
   margin-bottom: 7%;
   position: absolute;
   top: -9999px;
@@ -404,11 +404,11 @@ input {
 }
 
 input:checked ~ #hamburger-links { 
-  opacity: 1; 
+  opacity: 1;
   cursor: auto;
 }
 
-input:checked ~ #hamburger-links li { 
+input:checked ~ #hamburger-links li {
   position: static;
   top: auto;
   left: auto;
