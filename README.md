@@ -6,7 +6,7 @@ Application for the Founders and Coders Spring cohort (2021)
 
 You can view the application website at the following link: 
 
-:star: [Website link](http://joko208.github.io) :star:
+:star: [Website link](https://joko208.github.io/fac-website-2/) :star:
 
 It fulfils the following criteria:
 
