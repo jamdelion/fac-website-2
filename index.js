@@ -7,11 +7,11 @@ function randomStyleOnLoad() {
   let stylesheet = document.createElement('link');
   stylesheet.rel  = 'stylesheet';
   stylesheet.id = "page-style";
-  stylesheet.href = 'styles/style-' + (Math.floor(Math.random()*1)+1) + '.css';
+  stylesheet.href = 'styles/style-' + (Math.floor(Math.random()*2)+1) + '.css';
   document.getElementsByTagName('head')[0].appendChild(stylesheet);
   };
 
-// randomStyleOnLoad();
+randomStyleOnLoad();
 
 let colourPalette = document.getElementById("colour-palette");
 
