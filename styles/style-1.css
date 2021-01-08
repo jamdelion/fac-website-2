@@ -829,11 +829,14 @@ img {
   /* -------- Interactive Elements -------- */
 
   #palette-switch {
-    transition: scale 0.7s ease
+    background: linear-gradient(180deg, orange, yellow, green, #0080ff, purple, red, orange, yellow, green, #0080ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color 0.5s ease;
   }
   
   #palette-switch:hover {
-    transform: scale(1.1);
+    color: transparent;
   }
   
   #dark-mode-switch {
