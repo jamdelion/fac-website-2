@@ -20,7 +20,18 @@ function changeStylesheet(style) {
 }
 
 colourPalette.addEventListener("click", () => {
-  let randomStyle = 'styles/style-' + (Math.floor(Math.random()*2)+1) + '.css';
+  let currentStylesheet = document.getElementById("page-style");
+  let currentStyle = parseInt((currentStylesheet.href).slice(-5,-4));
+  let randomNum = Math.floor(Math.random()*5)+1;
+  // if the random number generator select the same style, minus 1 from the random number
+  if (randomNum == currentStyle) {
+    if (randomNum != 1) {
+      randomNum -= 1;
+    } else {
+      randomNum = 5;
+    }
+  }
+  let randomStyle = 'styles/style-' + randomNum + '.css';
   changeStylesheet(randomStyle);
 });
 
