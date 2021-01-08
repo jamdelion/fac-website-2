@@ -72,19 +72,28 @@ footer {
   justify-content: center;
 }
 
-header, #about-this-content {
+header {
   padding-bottom: 5%;
-  background: url("../images/lightning4.svg") no-repeat;
-  background-position-x: 38%;
-  background-position-y: center;
   padding-top: 0.5%;
+  position: relative;
+  z-index: 2;
+}
+
+#lightning {
+  position: absolute;
+  top: 1vh;
+  z-index: -1;
+  right: 5%;
+  transform: scale(1,1);
+}
+
+#about-this-content {
+  padding-bottom: 5%;
 }
 
 li {
   margin-bottom: 2%;
 }
-
-
 
 #nothingHere {
   display: none;
@@ -636,9 +645,14 @@ img {
     padding: 1rem 0 3rem 0;
     width: 28vw;
     margin-top: 19vh;
-    background-position: center;
-    background-size: 160%;
   }
+
+  #lightning {
+    top: 13vh;
+    right: 6%;
+    transform: scale(2,2);
+  }
+  
 
   #about-me {
     background-color: white;
@@ -904,12 +918,10 @@ img {
     font-size: 1.1em;
   }
 
-  header {
-    background-size: auto;
-    background-position-y: 27%;
-    background-position-x: 0%;
+  #lightning {
+    top: 8vh;
+    transform: scale(1.5,1.5);
   }
-
 }
   
 @media (min-width: 1200px) {
@@ -943,4 +955,10 @@ img {
   .am-section {
     margin-right: auto;
   }
+
+  #lightning {
+    top: 4vh;
+    transform: scale(1.1,1.1);
+  }
+  
 }
