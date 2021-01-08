@@ -100,7 +100,7 @@ li {
 .am-item {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 3%;
-  margin-left: 4%;
+  padding-bottom: 1%;
 }
 
 .am-item-title {
@@ -182,7 +182,7 @@ h4 {
   font-size: 2.5em;
 }
 
-#smirk {
+#smirk, #wave-emoji {
   font-size: larger;
 }
 
@@ -716,10 +716,18 @@ img {
     float: right;
   }
 
+  .am-item {
+    padding-bottom: 4%;
+  }
+
+  .am-section {
+    margin-right: 2%;
+  }
+
 /* Why FAC section - desktop size */
 
   #why-fac {
-    background-color: transparent;
+    background-color: white;
   }
 
   .why-fac-content {
@@ -736,7 +744,7 @@ img {
 
   .reason-text {
     align-self: flex-end;
-    width: 124%;
+    width: 118%;
   }
 
   #code-icon {
@@ -912,5 +920,13 @@ img {
 
   #main-content-container {
     margin-left: 0;
+  }
+
+  .am-item {
+    padding-bottom: 1%;
+  }
+
+  .am-section {
+    margin-right: auto;
   }
 }
