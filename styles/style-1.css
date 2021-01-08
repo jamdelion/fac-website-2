@@ -80,10 +80,7 @@ li {
   margin-bottom: 2%;
 }
 
-h5 {
-  font-size: 1.3em;
-  margin-left: 3%;
-}
+
 
 #nothingHere {
   display: none;
@@ -134,6 +131,10 @@ h5 {
 
 #about-this-content li {
   max-width: 95%;
+  font-family: "Nunito";
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5%;
 }
 
 /* -------- Why FAC section -------- */
@@ -183,6 +184,11 @@ h4 {
 
 #smirk {
   font-size: larger;
+}
+
+.reason-text {
+  font-family: "Nunito", auto;
+  font-size: 1.1em;
 }
 
 /* -------- Interactive Elements -------- */
@@ -450,6 +456,10 @@ input:checked ~ #hamburger-links li:hover {
 
 h1 {
   text-align: center;
+  font-family: "Aclonica";
+  font-size: 2em;
+  letter-spacing: 4px;
+  text-shadow: 1px 4px 7px black;
 }
 
 h3 {
@@ -459,15 +469,24 @@ h3 {
   text-align: center;
 }
 
+h5 {
+  font-size: 1.5em;
+  margin-left: 3%;
+  font-family: "Montserrat", Verdana, sans-serif;
+  letter-spacing: 2.5px;
+}
+
 p {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  font-family: "Nunito", Verdana, sans-serif;
 }
 
 #intro {
   text-align: center;
   padding-top: 2%;
+  font-size: 1.1em;
 }
 
 /* ----- Image Elements -------- */
@@ -646,7 +665,6 @@ img {
     font-size: 18px;
   }
   
-
   #nothingHere {
     display: block;
     position: absolute;
@@ -733,7 +751,7 @@ img {
     justify-content: space-around;
     background-color: gray;
     color: white;
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     height: 60px;
     position: absolute;
@@ -865,6 +883,11 @@ img {
   #jo-img {
     width: 55%;
   }
+
+  .reason-text {
+    font-size: 1.1em;
+  }
+
 }
   
 @media (min-width: 1200px) {
