@@ -25,7 +25,7 @@
   color: #29B6F6 !important;
 }
 
-.dark-mode .tab, .dark-mode .fac-reason, .dark-mode .why-fac-content, .dark-mode #code-icon, .dark-mode span, .dark-mode footer, .dark-mode input:checked + label, .dark-mode #links a, .dark-mode .circle-mark {
+.dark-mode .tab, .dark-mode .fac-reason, .dark-mode .why-fac-content, .dark-mode .code-icon, .dark-mode span, .dark-mode footer, .dark-mode input:checked + label, .dark-mode #links a, .dark-mode .circle-mark {
   background-color: #333333 !important;
   color: white;
 }
@@ -223,7 +223,7 @@
     box-shadow: 0px 6px 10px #29B6F6;
   }
   
-  #code-icon {
+  .code-icon {
     position: absolute;
     top: -20px;
     background-color: #E4F3FB;
@@ -319,7 +319,7 @@
   #sun-moon {
     right: 18px;
   }
-  
+
   /* ---- Hamburger links ----- */
   
   #menu {
@@ -551,7 +551,7 @@
     color: #055a81;
   }
   
-  #intro {
+  .intro {
     text-align: center;
     padding-top: 2%;
     font-size: 1.1em;
@@ -659,12 +659,12 @@
     padding-bottom: 5%;
   }
   
-  #playIcon, #pauseIcon {
+  .playIcon, #pauseIcon {
     margin: 5px 5px 0px 5px;
     transition: color 0.5s ease;
   }
   
-  #playIcon:hover, #pauseIcon:hover {
+  .playIcon:hover, #pauseIcon:hover {
     color: #29B6F6;
   }
   
@@ -863,7 +863,7 @@
       width: 118%;
     }
   
-    #code-icon {
+    .code-icon {
       background-color: white;
     }
   

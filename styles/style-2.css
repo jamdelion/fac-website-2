@@ -21,7 +21,7 @@
   color: white !important;
 }
 
-.dark-mode .tab, .dark-mode .fac-reason, .dark-mode .why-fac-content, .dark-mode #code-icon, .dark-mode span, .dark-mode footer, .dark-mode input:checked + label, .dark-mode #links a, .dark-mode .circle-mark {
+.dark-mode .tab, .dark-mode .fac-reason, .dark-mode .why-fac-content, .dark-mode .code-icon, .dark-mode span, .dark-mode footer, .dark-mode input:checked + label, .dark-mode #links a, .dark-mode .circle-mark {
   background-color: #333333 !important;
   color: white;
 }
@@ -219,7 +219,7 @@ h4 {
   box-shadow: 0px 6px 10px #b8e0b9;
 }
 
-#code-icon {
+.code-icon {
   position: absolute;
   top: -20px;
   background-color: #EBF7EB;
@@ -547,7 +547,7 @@ p {
   color: #1e441f;
 }
 
-#intro {
+.intro {
   text-align: center;
   padding-top: 2%;
   font-size: 1.1em;
@@ -655,12 +655,12 @@ img {
   padding-bottom: 5%;
 }
 
-#playIcon, #pauseIcon {
+.playIcon, #pauseIcon {
   margin: 5px 5px 0px 5px;
   transition: color 0.5s ease;
 }
 
-#playIcon:hover, #pauseIcon:hover {
+.playIcon:hover, #pauseIcon:hover {
   color: #5fb962;
 }
 
@@ -860,7 +860,7 @@ img {
     width: 118%;
   }
 
-  #code-icon {
+  .code-icon {
     background-color: white;
   }
 
