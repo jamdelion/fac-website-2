@@ -914,14 +914,14 @@
   
     /* -------- Interactive Elements -------- */
   
-    #palette-switch {
-      background: linear-gradient(180deg, orange, yellow, green, #0080ff, purple, red, orange, yellow, green, #0080ff);
+    #colour-palette {
+      background: linear-gradient(180deg,#0080ff, purple, red, orange, yellow, green, #0080ff);
       background-clip: text;
       -webkit-background-clip: text;
       transition: color 0.5s ease;
     }
     
-    #palette-switch:hover {
+    #colour-palette:hover {
       color: transparent;
     }
     
