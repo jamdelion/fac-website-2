@@ -306,6 +306,19 @@
     opacity: 1;
     transform: translate(0px, -5px);
   }
+
+  #colour-palette, #sun-moon {
+    position: fixed;
+    top: 11px;
+  }
+
+  #colour-palette {
+    right: 57px;
+  }
+
+  #sun-moon {
+    right: 18px;
+  }
   
   /* ---- Hamburger links ----- */
   
@@ -676,6 +689,12 @@
       position: absolute;
       top: -9999px;
       left: -9999px;
+    }
+
+    #colour-palette, #sun-moon {
+      position: static;
+      top: auto;
+      right: auto;
     }
   
   /* -------- Text elements-------- */
