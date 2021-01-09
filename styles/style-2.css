@@ -746,7 +746,7 @@ img {
   }
 
   #top-nav {
-    position: fixed;
+    position: absolute;
     height: 52px;
     background-color: #5fb962;
     width: 9vw;

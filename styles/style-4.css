@@ -749,7 +749,7 @@
     }
   
     #top-nav {
-      position: fixed;
+      position: absolute;
       height: 52px;
       background-color: #29B6F6;
       width: 9vw;
