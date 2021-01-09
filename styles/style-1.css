@@ -257,7 +257,7 @@ a:active {
 }
 
 .mn-button:hover {
-  background-color: pink;
+  background-color: #03c2d3;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
