@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
   function playSlides() {
     if (!playPause.classList.contains("play")) {
       changeSlide(1);
-      setTimeout(playSlides, 2000);
+      setTimeout(playSlides, 1500);
     }
   }
 
