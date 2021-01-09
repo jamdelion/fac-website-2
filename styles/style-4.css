@@ -219,7 +219,7 @@
     padding: 5%;
     border: solid thin #29B6F6;
     border-radius: 7%;
-    margin-bottom: 8%;
+    margin-bottom: 12%;
     box-shadow: 0px 6px 10px #29B6F6;
   }
   
@@ -659,7 +659,12 @@
     display: none;
   }
   
-  
+  @media (min-width: 550px) {
+
+    .fac-reason {
+      margin-bottom: 8%;
+    }
+  }
   
   /* --------------------STYLING FOR DIFFERENT SCREEN SIZES--------------------------- */
   /* Properties for larger screens */
