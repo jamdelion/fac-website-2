@@ -939,7 +939,7 @@ img {
   /* ---- Image Carousel ----- */
 
   #slide-container {
-    height: 52vh;
+    height: 55vh;
     padding: 0 0.5em 1em 0;
   }
 
@@ -1047,6 +1047,18 @@ img {
   #lightning {
     top: 4vh;
     transform: scale(1.1,1.1);
+  }
+  
+}
+
+@media (min-width: 1650px) {
+
+  #photo1 {
+    object-position: 0 88%;
+  }
+
+  #photo2 {
+    object-position: 0 43%;
   }
   
 }
