@@ -123,6 +123,10 @@ li {
   display: none;
 }
 
+#about-me, #about-this, #why-fac {
+  line-height: 1.4;
+}
+
 /* -------- About me section -------- */
 
 /* #sparse-detail li {
