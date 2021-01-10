@@ -172,6 +172,7 @@ li {
 #about-this-content li {
   font-family: "Nunito";
   margin-bottom: 1.5%;
+  margin-right: 1%;
 }
 
 #whats-different {
@@ -534,6 +535,7 @@ h4 {
   font-family: "Montserrat", Helvetica, sans-serif;
   letter-spacing: 2.5px;
   padding-top: 2%;
+  margin-left: 1%;
 }
 
 p {
@@ -667,6 +669,17 @@ img {
 
   .fac-reason {
     margin-bottom: 8%;
+  }
+}
+
+@media (min-width: 700px) {
+
+  #about-this-content li {
+    margin-right: 0;
+  }
+
+  h4 {
+    margin-left: 0;
   }
 }
 

@@ -178,6 +178,7 @@
     font-family: "Nunito";
     margin-bottom: 1.5%;
     color: #055a81;
+    margin-right: 1%;
   }
   
   #whats-different {
@@ -545,6 +546,7 @@
     letter-spacing: 2.5px;
     padding-top: 2%;
     color: #055a81;
+    margin-left: 1%;
   }
   
   p {
@@ -681,6 +683,17 @@
 
     .fac-reason {
       margin-bottom: 8%;
+    }
+  }
+
+  @media (min-width: 700px) {
+
+    #about-this-content li {
+      margin-right: 0;
+    }
+
+    h4 {
+      margin-left: 0;
     }
   }
   
