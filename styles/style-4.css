@@ -264,7 +264,7 @@
     color: black;
   }
   
-  .mn-button:hover {
+  .mn-button:hover, .mn-button:focus {
     background-color: #004573;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
   }

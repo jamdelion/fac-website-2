@@ -37,10 +37,10 @@
       </div>
       <div id="colour-mode-buttons">
         <button id="palette-switch">
-          <i class="fas fa-palette" id="colour-palette"></i>
+          <i class="fas fa-palette" id="colour-palette" tabindex="0"></i>
         </button>
         <button id="dark-mode-switch">
-            <i class="fas fa-moon" id="sun-moon"></i>
+            <i class="fas fa-moon" id="sun-moon" tabindex="0"></i>
         </button>
       </div>
     </nav>
@@ -68,23 +68,23 @@
         </div>
         <!-- Middle Nav -->
         <nav id="middle-nav">
-          <div class="mn-button" data-linked-text="about-me">
+          <div class="mn-button" data-linked-text="about-me" tabindex="0">
             <i class="far fa-laugh fa-1x white" id="aboutme-icon"></i> 
             About Me
           </div>
-          <div class="mn-button" data-linked-text="about-this">
+          <div class="mn-button" data-linked-text="about-this" tabindex="0">
             <i class="far fa-file-code fa-1x white" id="aboutthis-icon"></i> 
             This Site
           </div>
-          <div class="mn-button" data-linked-text="why-fac">
+          <div class="mn-button" data-linked-text="why-fac" tabindex="0">
             <i class="far fa-question-circle fa-1x white" id="question-icon"></i>
             Why F&C
           </div>
-          <div class="mn-button" data-linked-text="img-carousel">
+          <div class="mn-button" data-linked-text="img-carousel" tabindex="0">
             <i class="far fa-images fa-1x white" id="image-icon"></i>
             Images
           </div>
-          <div class="mn-button linkToLinks" id="link-container" data-linked-text="linkPointer">
+          <div class="mn-button linkToLinks" id="link-container" data-linked-text="linkPointer" tabindex="0">
             <i class="fas fa-link fa-1x white" id="link-icon"></i> 
             Links
           </div>
@@ -102,9 +102,9 @@
                   <div class="line" id="line2"></div>
                 </div>
                 <div id="circles">
-                  <div class="circle-mark filled" id="circle1" data-linked-text="sparse-detail"></div>
-                  <div class="circle-mark thick" id="circle2" data-linked-text="more-detail"></div>
-                  <div class="circle-mark" id="circle3" data-linked-text="most-detail"></div>
+                  <div class="circle-mark filled" id="circle1" data-linked-text="sparse-detail" tabindex="0"></div>
+                  <div class="circle-mark thick" id="circle2" data-linked-text="more-detail" tabindex="0"></div>
+                  <div class="circle-mark" id="circle3" data-linked-text="most-detail" tabindex="0"></div>
                 </div>
                 <div id="options">
                   <div class="option" id="mark1" data-linked-circle="circle1">Sparse</div>
@@ -458,26 +458,30 @@
                   <img src="images/cat3.jpg" alt="cat pic" class="images hidden-img" id="photo3">
                 </div>
                 <div id="img-nav-btns">
-                  <div class="img-nav active">01</div>
-                  <div class="img-nav">02</div>
-                  <div class="img-nav">03</div>
+                  <div class="img-nav active" tabindex="0">01</div>
+                  <div class="img-nav" tabindex="0">02</div>
+                  <div class="img-nav" tabindex="0">03</div>
                 </div>
                 <div id="prevNext">
                   <!-- Previous button -->
                   <div class="prev">
-                    <i class="fas fa-chevron-left fa-4x white" id="prev-icon"></i>
+                    <i class="fas fa-chevron-left fa-4x white" id="prev-icon" tabindex="0"></i>
                   </div>
                 <!-- Next button -->
                   <div class="next">
-                    <i class="fas fa-chevron-right fa-4x white" id="next-icon"></i>
+                    <i class="fas fa-chevron-right fa-4x white" id="next-icon" tabindex="0"></i>
                   </div>
                 </div>
               </div>
 
               <!-- Play/Pause button -->
               <div class="pause play" id="playPause">
-                <div class="playIcon" class=""> <i class="fas fa-play fa-2x black" class="playIcon"></i></div>
-                <div id="pauseIcon" class="hidden-img"><i class="fas fa-pause fa-2x black"></i></div>
+                <div class="playIcon" class=""> 
+                  <i class="fas fa-play fa-2x black" class="playIcon" tabindex="0"></i>
+                </div>
+                <div id="pauseIcon" class="hidden-img">
+                  <i class="fas fa-pause fa-2x black" tabindex="0"></i>
+                </div>
               </div>
             </div>
           </section>
@@ -486,14 +490,14 @@
           <section id="linkPointer" class="hidden tab">
             <div class="tab-content">
               <h3>Links</h3>
-              <p><span class="linkToLinks" id="see-footer">See the footer</span> for links to the other application requirements...</p>
+              <p><span class="linkToLinks" id="see-footer" tabindex="0">See the footer</span> for links to the other application requirements...</p>
               <img src="images/curly-arrow.svg" alt="a curly arrow pointing to the links in the footer" id="curly-arrow">
             </div>
           </section>
         </main>
       </section>
     </div>
-    <button id="scrollToTop"><i class="fas fa-angle-double-up"></i></button>
+    <button id="scrollToTop"><i class="fas fa-angle-double-up" tabindex="0"></i></button>
   </div>
   <footer>
     <!-- Links -->
