@@ -184,6 +184,7 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 66ch;
+    font-family: "Nunito", Arial, sans-serif;
   }
   
   /* -------- Why FAC section -------- */
@@ -540,7 +541,6 @@
   
   h4 {
     font-size: 1.5em;
-    margin-left: 3%;
     font-family: "Montserrat", Helvetica, sans-serif;
     letter-spacing: 2.5px;
     padding-top: 2%;
