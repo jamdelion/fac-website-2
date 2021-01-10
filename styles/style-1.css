@@ -46,10 +46,9 @@
   font-weight: bold;
 }
 
-.filled {
+.filled, .dark-mode .filled {
   background-color: lightgray !important;
 }
-
 
 /* -------- Structural Elements -------- */
 

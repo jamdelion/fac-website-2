@@ -44,6 +44,11 @@ colourPalette.addEventListener("click", () => {
       element.classList.toggle("dark-mode");
   }
 
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    console.log("window matches");
+    toggleDarkMode();
+  }
+
   function toggleSunMoon() {
     var sunMoon = document.getElementById('sun-moon');
     sunMoon.classList.toggle("fa-moon");
