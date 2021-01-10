@@ -132,33 +132,41 @@ colourPalette.addEventListener("click", () => {
 
   let linkButtons = document.querySelectorAll(".linkToLinks"); 
   let linkIcons = document.querySelectorAll(".linkIcon");
+  let linkToColourPalette = document.getElementById("linkToColourPalette");
+  let palette = document.getElementById("colour-palette");
+
+  function HighlightIcon(icon) {
+    icon.animate(
+      [
+        {
+          "-webkit-transform": 'translateY(-10px)',
+          "-ms-transform": 'translateY(-10px)',
+          "transform": 'translateY(-10px)',
+          color: 'yellow'
+        },
+        {
+          "-webkit-transform": 'translateY(0px)',
+          "-ms-transform": 'translateY(0px)',
+          "transform": 'translateY(0px)'
+        }
+      ], {
+        duration: 1000,
+        easing: "ease"
+      });
+};
 
   function makeLinksShake() {
-    linkIcons.forEach(function(icon) {
-      icon.animate(
-        [
-          {
-            "-webkit-transform": 'translateY(-10px)',
-            "-ms-transform": 'translateY(-10px)',
-            "transform": 'translateY(-10px)',
-            color: 'yellow'
-          },
-          {
-            "-webkit-transform": 'translateY(0px)',
-            "-ms-transform": 'translateY(0px)',
-            "transform": 'translateY(0px)'
-          }
-        ], {
-          duration: 1000,
-          easing: "ease"
-        });
-    })
+    linkIcons.forEach(HighlightIcon);
   };
 
   linkButtons.forEach(function(button) {
     button.addEventListener("click", () => {
       makeLinksShake();
     })
+  });
+
+  linkToColourPalette.addEventListener("click", () => {
+    HighlightIcon(palette);
   });
 
   // ----------- CLOSE HAMBURGER MENU ---------
