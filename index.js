@@ -65,6 +65,8 @@ colourPalette.addEventListener("click", () => {
   // ------ MIDDLE NAV BUTTONS --------------------------
 
   const middleNavButtons = document.querySelectorAll(".mn-button");
+  let seePhotos = document.querySelectorAll(".see-photos");
+  let linkToDetailSlider = document.getElementById("linkToDetailSlider");
 
   function hideElement(target) {
     target.classList.toggle("hidden");
@@ -96,6 +98,12 @@ colourPalette.addEventListener("click", () => {
   middleNavButtons.forEach(function(button) {
       button.addEventListener("click", hideLinkedText)
   });
+
+  seePhotos.forEach(function(button) {
+    button.addEventListener("click", hideLinkedText)
+  });
+
+  linkToDetailSlider.addEventListener("click", hideLinkedText);
 
   // ------ SCROLL TO TOP BUTTON --------------------------
 
