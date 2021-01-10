@@ -160,7 +160,6 @@ li {
 }
 
 .detail {
-  /* text-transform: uppercase; */
   font-weight: bold;
   color: #5fb962;
 }
@@ -299,6 +298,7 @@ a:active {
 
 #scrollToTop:hover {
   opacity: 1;
+  -webkit-transform: translate(0px, -5px);
   transform: translate(0px, -5px);
 }
 
@@ -579,6 +579,7 @@ img {
 }
 
 #curly-arrow {
+  -webkit-transform: rotate(75deg);
   transform: rotate(75deg);
   margin-left: auto;
   margin-right: auto;
@@ -804,6 +805,7 @@ img {
   }
 
   #nothingHere i:hover {
+    -webkit-transform: translate(0px, -20px);
     transform: translate(0px, -20px);
   }
 
@@ -927,6 +929,7 @@ img {
   }
   
   #dark-mode-switch:hover {
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
 

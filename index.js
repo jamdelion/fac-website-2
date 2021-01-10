@@ -130,11 +130,15 @@ colourPalette.addEventListener("click", () => {
       icon.animate(
         [
           {
-            transform: 'translateY(-10px)',
+            "-webkit-transform": 'translateY(-10px)',
+            "-ms-transform": 'translateY(-10px)',
+            "transform": 'translateY(-10px)',
             color: 'yellow'
           },
           {
-            transform: 'translateY(0px)'
+            "-webkit-transform": 'translateY(0px)',
+            "-ms-transform": 'translateY(0px)',
+            "transform": 'translateY(0px)'
           }
         ], {
           duration: 1000,
