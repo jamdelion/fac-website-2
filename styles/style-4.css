@@ -133,10 +133,6 @@
   
   /* -------- About me section -------- */
   
-  /* #sparse-detail li {
-    text-align: center;
-  } */
-  
   #sparse-detail, #more-detail, #most-detail {
     margin: auto;
     width: 85%;
