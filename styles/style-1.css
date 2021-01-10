@@ -301,6 +301,7 @@ a:active {
 #colour-palette, #sun-moon {
   position: fixed;
   top: 11px;
+  z-index: 1000;
 }
 
 #colour-palette {
