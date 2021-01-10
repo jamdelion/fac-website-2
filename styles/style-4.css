@@ -17,11 +17,11 @@
   color: white;
 }
 
-.dark-mode p, .dark-mode li, .dark-mode h2, .dark-mode h3, .dark-mode h5, .dark-mode h1 {
+.dark-mode p, .dark-mode li, .dark-mode h2, .dark-mode h2, .dark-mode h4, .dark-mode h1 {
   color: white !important;
 }
 
-.dark-mode h4 {
+.dark-mode h3 {
   color: #29B6F6 !important;
 }
 
@@ -191,7 +191,7 @@
     padding: 0.5rem;
   }
   
-  h4 {
+  h3 {
     font-family: "Fredoka One";
     font-size: 1.75em;
     color: #005791;
@@ -528,14 +528,14 @@
     color: #055a81;
   }
   
-  h3 {
+  h2 {
     font-family: 'Montserrat';
     font-size: 50px;
     padding: 3%;
     text-align: center;
   }
   
-  h5 {
+  h4 {
     font-size: 1.5em;
     margin-left: 3%;
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -700,7 +700,7 @@
   
   /* -------- Text elements-------- */
   
-    h3 {
+    h2 {
       text-align: left;
       padding: 1% 0 0 3%
     }
